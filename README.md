@@ -14,7 +14,7 @@ A capstone project is the closing project that students will solo-perform. It is
 - HTML
 - SCSS/SASS
 - Bootstrap
-- Free assets sites: Coverr, Unsplash, Lipsum (Lorem Ipsum) and Google Fonts
+- Free assets sites: Coverr, Unsplash, FontAwesome, Lipsum (Lorem Ipsum) and Google/Adobe Fonts
 
 ## Live Demo
 

@@ -1,0 +1,6 @@
+// This will define the main style of the landing page (index.html)
+@import "theme";
+
+body {
+  @include liberation(normal, 1rem, 1rem);
+}

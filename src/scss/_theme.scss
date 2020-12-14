@@ -1,0 +1,5 @@
+// The _theme.scss is a SASS partial that will define the main theme.
+
+@mixin liberation($st, $fs, $lh) {
+  font: #{$st} #{$fs}/#{$lh} liberation-sans, "Segoe UI", sans-serif;
+}
