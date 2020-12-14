@@ -1,0 +1,39 @@
+{
+  "name": "project-template",
+  "version": "0.0.0",
+  "description": "Template for HTML/CSS/JS (frontend) projects.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoTengoBattery/html-css-template.git"
+  },
+  "author": "Oever González (NoTengoBattery)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoTengoBattery/html-css-template/issues"
+  },
+  "homepage": "https://github.com/NoTengoBattery/html-css-template#readme",
+  "devDependencies": {
+    "@lhci/cli": "*",
+    "@popperjs/core": "*",
+    "bootstrap": "*",
+    "foundation-sites": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-postcss": "*",
+    "gulp-purgecss": "*",
+    "gulp-watch": "*",
+    "hint": "*",
+    "jquery": "*",
+    "less": "*",
+    "lighthouse": "*",
+    "sass": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "stylelint-csstree-validator": "*",
+    "stylelint-scss": "*",
+    "typescript": "*",
+    "what-input": "*"
+  }
+}
