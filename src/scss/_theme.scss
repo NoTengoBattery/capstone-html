@@ -2,8 +2,11 @@
 // Color theme: https://coolors.co/21295c-1b3b6f-065a82-1c7293-9eb3c2
 @import url('https://fonts.googleapis.com/css?family=Cinzel:b');
 
-$main-color: #1c7293;
 $soft-accent: #9eb3c2;
+$main-color: #1c7293;
+$accent: #065a82;
+$medium-accent: #1b3b6f;
+$strong-accent: #21295c;
 
 @mixin cinzel($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Cinzel, "MS Serif", serif;

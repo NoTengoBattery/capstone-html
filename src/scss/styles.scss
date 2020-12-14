@@ -3,7 +3,7 @@
 
 html,
 body {
-  @include liberation(normal, 1rem, 1rem);
+  @include liberation(normal, 1rem, 1.15rem);
 
   height: 100%;
 }
@@ -19,7 +19,12 @@ img {
   background-color: $main-color;
 
   &-brand {
-    @include cinzel(bold, 2rem, 1rem);
+    @include cinzel(bold, 2rem, 2rem);
+
+    i {
+      // Fix the icon being with a different line height
+      line-height: 2rem;
+    }
   }
 
   &-controls {
@@ -34,27 +39,69 @@ img {
     // and repeating this in the classes, in the HTMl is kind of wasteful.
     background: none;
     color: white;
-    padding: 0;
-    font-size: 1.25rem;
     line-height: 1rem;
-    width: 1.375rem;
-    height: 1.375rem;
+    font-size: 1.25rem;
+    width: 1.3125rem;
+    height: 1.3125rem;
+
+    i {
+      // Fix the icon being with a different line height
+      line-height: 1rem;
+    }
   }
 }
 
 #landing {
   // I am not sure how to make this div 100% height, considering the navbar
-  height: calc(100% - 6rem);
+  height: calc(100% - 5.5rem);
 
   &-bg {
+
+    // This is the background image and it's black tint (for better contrast)
     &::after {
       content: "";
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.5);
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+    }
+  }
+
+  &-content {
+    // Since I cannot float this over the background, for some reason, I am
+    // going to make it absolute and then make it fill the whole container.
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    form {
+      color: $medium-accent;
+      background-color: $soft-accent;
+
+      > * {
+        text-transform: uppercase;
+      }
+    }
+
+    &-query,
+    &-submit {
+      height: 1.75rem;
+    }
+
+    &-query {
+      color: $accent;
+      background-color: white;
+    }
+
+    &-submit {
+      color: white;
+      background-color: $accent;
     }
   }
 }
