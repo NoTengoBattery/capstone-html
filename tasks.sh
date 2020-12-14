@@ -95,7 +95,7 @@ fi
 
 # Run the `stylelint` linter
 if [ "x$RUN_STYLELINT" = "x$YES" ]; then
-  _print_run "Stylelint CSS linter" "$NPX" stylelint $STYLELINT_MATCH_PATTERN
+  _print_run "Stylelint CSS linter" "$NPX" stylelint --fix $STYLELINT_MATCH_PATTERN
 fi
 
 # Run the gulp tasks
