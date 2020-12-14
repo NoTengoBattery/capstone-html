@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Fun note: Dr. Watson is inspired in the Windows Dr. Watson, a Microsoft debugger; not in the Sherlock mate -->
+  <!-- FunFact: Dr. Watson is inspired in the Windows Dr. Watson, a Microsoft debugger; not in the Sherlock mate -->
   <title>Dr. Watson − Connect with Specialist in Rare Diseases</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="build/built/less/reset.css">
@@ -16,27 +16,87 @@
 <body>
   <nav class="navbar justify-content-around navbar-expand-lg">
     <a class="text-white m-0 p-0 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-2 pb-2 col-12 navb-controls">
+    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 navb-controls">
       <button class="border-0 navb-control" type="button"><i class="fas fa-search"></i></button>
       <button class="border-0 p-0 m-0 navb-control" type="button"><i class="fas fa-info"></i></button>
       <button class="border-0 p-0 m-0 navb-control" type="button"><i class="fas fa-blog"></i></button>
       <button class=" p-0 m-0 navbar-toggler navb-control" type="button" data-toggle="collapse" data-target="#navb-lg" aria-controls="navb-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
     </div>
-    <div class="collapse navbar-collapse" id="navb-lg">
+    <div id="navb-lg" class="collapse navbar-collapse">
     </div>
   </nav>
-  <!---span>Photo by <a href="https://unsplash.com/@nci?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">National Cancer Institute</a> on <a href="https://unsplash.com/s/photos/doctor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span-->
-  <div class="position-relative" id="landing">
+  <div id="landing" class="position-relative">
     <div id="landing-bg" class="h-100 position-relative">
       <img class="h-100" src="assets/images/nci.jpg" alt="Doctor attending a patient">
+      <!-- Image thanks to Unsplash - National Cancer Institute -->
     </div>
     <div id="landing-content" class="position-absolute p-2 d-flex flex-column justify-content-center align-content-center">
       <p class="text-center">Dr. Watson lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <form class="jumbotron m-0 row">
-        Search by keyword:
+        <span class="p-0 pb-1 col-12">Search by keyword:</span>
         <input type="text" id="landing-content-query" class="col-8 border-0 rounded-left">
-        <input type="submit" id="landing-content-submit" class="col-4 border-0 rounded-right" value="Search">
+        <input type="submit" id="landing-content-submit" class="col-4 border-0 rounded-right submit" value="Search">
       </form>
+      <button type="button" id="landing-content-info" class="border-0 rounded next_sm submit">In eget nisl quis?</button>
     </div>
   </div>
+  <main class="d-flex flex-wrap p-4">
+    <h1 class="text-center pb-3">Vestibulum sed imperdiet nunc</h1>
+    <article class="card text-center mb-3">
+      <div class="card-body">
+        <h2 class="card-title pb-1"><i class="fas fa-search"></i> Interimo</h2>
+        <h3 class="card-subtitle pb-2">Vivani venimus!</h3>
+        <p class="card-text">Suspendisse bibendum nisl quis consectetur hendrerit. Aliquam nec magna sem. Maecenas odio nibh, blandit tempor lectus luctus, gravida cursus est.</p>
+      </div>
+    </article>
+    <article class="card text-center mb-3">
+      <div class="card-body">
+        <h2 class="card-title pb-1"><i class="far fa-compass"></i> Rutrum</h2>
+        <h3 class="card-subtitle pb-2">Porta urna dictum</h3>
+        <p class="card-text">Sed eu imperdiet mi. Mauris dui odio, venenatis eu risus quis, suscipit porta massa. Morbi scelerisque, enim luctus bibendum tincidunt, diam dolor gravida est, sit amet venenatis erat nulla ac ligula.</p>
+      </div>
+    </article>
+    <article class="card text-center mb-3">
+      <div class="card-body">
+        <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Duis posuere</h2>
+        <h3 class="card-subtitle pb-2">Pellentesque habitant morbi</h3>
+        <p class="card-text">Quisque at euismod ligula. Praesent odio arcu, interdum in mi eget, bibendum consectetur sapien.</p>
+      </div>
+    </article>
+    <article class="card text-center mb-3">
+      <div class="card-body">
+        <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Consectetur</h2>
+        <h3 class="card-subtitle pb-2">Aliquam suscipit</h3>
+        <p class="card-text">Cras leo ligula, fringilla quis leo sed, finibus euismod lacus. Etiam posuere suscipit lectus, a blandit risus eleifend sit amet. Sed tincidunt eleifend feugiat.</p>
+      </div>
+    </article>
+    <article id="whatson-style1" class="whatson p-4">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <div class="whatson-body text-white">
+        <h2 class="text-white whatson-title">Dies 10,000 ira, dies illa</h2>
+        <p>Quantus tremor est futurus, quando iudex est venturus cuncta stricte discussurus! Tuba mirum spargens sonum per sepulcra regionum, coget omnes ante thronum.</p>
+        <img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital">
+        <!-- Image thanks to Unsplash - National Cancer Institute -->
+      </div>
+    </article>
+    <article id="whatson-style2" class="whatson p-4">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <div class="whatson-body text-white">
+        <h2 class="text-white whatson-title">Solvet saeclum in favilla</h2>
+        <p>Mors stupebit et Natura cum resurget creatura,
+          iudicanti responsura. Liber scriptus proferetur in quo totum continetur unde mundus iudicetur.</p>
+        <img class="mx-auto whatson-media" src="assets/images/wo-lab.jpg" alt="View of the insides of a laboratory">
+        <!-- Image thanks to Unsplash - Walter Otto -->
+      </div>
+    </article>
+    <article id="whatson-style3" class="whatson p-4">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <div class="whatson-body text-white">
+        <h2 class="text-white whatson-title">Teste david cum sibylla!</h2>
+        <p>Iudex ergo cum sedebit quidquid latet apparebit, nihil inultum remanebit. Quid sum miser tunc dicturus? Quem patronum rogaturus cum vix iustus sit securus?</p>
+        <img class="mx-auto whatson-media" src="assets/images/na-happy.jpg" alt="View of the insides of a laboratory">
+        <!-- Image thanks to Unsplash - Nathan Anderson -->
+      </div>
+    </article>
+  </main>
 </body></html>

@@ -1,12 +1,21 @@
 // The _theme.scss is a SASS partial that will define the main theme.
-// Color theme: https://coolors.co/21295c-1b3b6f-065a82-1c7293-9eb3c2
+// Color theme: https://coolors.co/21295c-1b3b6f-065a82-1c7293-9eb3c2-f4f8f8-e6ebef
+// Vivid card color theme: https://coolors.co/edae49-d1495b-00798c-30638e-003d5b
 @import url('https://fonts.googleapis.com/css?family=Cinzel:b');
 
-$soft-accent: #9eb3c2;
-$main-color: #1c7293;
-$accent: #065a82;
-$medium-accent: #1b3b6f;
 $strong-accent: #21295c;
+$medium-accent: #1b3b6f;
+$accent: #065a82;
+$main-color: #1c7293;
+$soft-accent: #9eb3c2;
+$tint-main: #f4f8f8;
+$tint-accent: #e6ebef;
+
+$vivid-yellow: #edae49;
+$vivid-red: #d1495b;
+$vivid-mint: #00798c;
+$vivid-blue: #30638e;
+$vivid-darkblue: #003d5b;
 
 @mixin cinzel($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} Cinzel, "MS Serif", serif;

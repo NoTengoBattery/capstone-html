@@ -35,7 +35,7 @@ img {
   line-height: 1rem
 }
 #landing {
-  height: calc(100% - 5.5rem)
+  height: calc(100% - 6rem)
 }
 #landing-bg::after {
   content: "";
@@ -55,22 +55,78 @@ img {
   text-transform: uppercase;
   font-weight: 700
 }
+#landing-content .submit,
 #landing-content form {
   color: #1b3b6f;
-  background-color: #9eb3c2
+  background-color: #9eb3c2;
+  opacity: .925
 }
+#landing-content .submit > *,
 #landing-content form > * {
   text-transform: uppercase
 }
-#landing-content-query,
-#landing-content-submit {
-  height: 1.75rem
+#landing-content .submit,
+#landing-content-query {
+  height: 2rem
 }
 #landing-content-query {
   color: #065a82;
   background-color: #fff
 }
-#landing-content-submit {
+#landing-content .submit {
   color: #fff;
   background-color: #065a82
+}
+main {
+  background: #e6ebef
+}
+main h1,
+main h2,
+main h3 {
+  font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
+  color: #21295c
+}
+main .card {
+  background-color: #f4f8f8
+}
+main h2 {
+  font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  color: #1b3b6f
+}
+main h3 {
+  font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
+  color: #065a82
+}
+main #whatson,
+main .whatson {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem
+}
+main #whatson-style1,
+main .whatson-style1 {
+  background-color: #d1495b
+}
+main #whatson-style2,
+main .whatson-style2 {
+  background-color: #00798c
+}
+main #whatson-style3,
+main .whatson-style3 {
+  background-color: #30638e
+}
+main #whatson-body,
+main .whatson-body {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column
+}
+main #whatson-media,
+main .whatson-media {
+  width: 50vw;
+  height: 50vw;
+  max-width: 15rem;
+  max-height: 15rem;
+  border-radius: 50%
 }

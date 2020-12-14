@@ -53,7 +53,7 @@ img {
 
 #landing {
   // I am not sure how to make this div 100% height, considering the navbar
-  height: calc(100% - 5.5rem);
+  height: calc(100% - 6rem);
 
   &-bg {
 
@@ -80,18 +80,22 @@ img {
     text-transform: uppercase;
     font-weight: bold;
 
-    form {
+    form,
+    .submit {
       color: $medium-accent;
       background-color: $soft-accent;
+      opacity: 0.925;
 
       > * {
         text-transform: uppercase;
       }
     }
 
+    // I am not going to use the Bootstrap `btn` or form for the landing
+    // section, this is intentional, I want to style it myself.
     &-query,
-    &-submit {
-      height: 1.75rem;
+    .submit {
+      height: 2rem;
     }
 
     &-query {
@@ -99,9 +103,81 @@ img {
       background-color: white;
     }
 
-    &-submit {
+    .submit {
       color: white;
       background-color: $accent;
+    }
+  }
+}
+
+main {
+  background: $tint-accent;
+
+  h1 {
+    @include liberation(bold, 1.3rem, 1.3rem);
+
+    text-transform: uppercase;
+    color: $strong-accent;
+  }
+
+  .card {
+    background-color: $tint-main;
+  }
+
+  // The linter is asking to put that many empty lines...
+  h2 {
+    @extend h1;
+
+    @include liberation(bold, 1.15rem, 1.15rem);
+
+    color: $medium-accent;
+  }
+
+  h3 {
+    @extend h1;
+
+    @include liberation(bold, 1rem, 1rem);
+
+    color: $accent;
+  }
+
+  // This is kind of a band, which will be used to show some remarkable aspects
+  // This is not available on Bootstrap, so I will make it myself. Also, I will
+  // not use Bootstrap flex for this, I'll do it manually.
+  //
+  // FunFact: The Watson debugger name means "What's On?" :D
+  .whatson,
+  #whatson {
+    margin: {
+      right: -1.5rem;
+      left: -1.5rem;
+    }
+
+    &-style1 {
+      background-color: $vivid-red;
+    }
+
+    &-style2 {
+      background-color: $vivid-mint;
+    }
+
+    &-style3 {
+      background-color: $vivid-blue;
+    }
+
+    &-body {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    &-media {
+      width: 50vw;
+      height: 50vw;
+      max-width: 15rem;
+      max-height: 15rem;
+      border-radius: 50%;
     }
   }
 }

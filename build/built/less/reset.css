@@ -1,13 +1,18 @@
 a,
+article,
 body,
 div,
 form,
+h1,
+h2,
+h3,
 html,
 i,
 img,
+main,
 nav,
 p,
-s {
+span {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,6 +20,8 @@ s {
   font: inherit;
   vertical-align: baseline
 }
+article,
+main,
 nav {
   display: block
 }
