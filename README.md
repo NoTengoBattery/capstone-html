@@ -1,18 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Capstone Project: HTML & CSS
 
-> One paragraph statement about the project.
+> This is a capstone project for the HTML and CSS section of the Technical Skills course.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+A capstone project is the closing project that students will solo-perform. It is designed to assess the student's technical and professional skills from the block that it is closing. For this project, a concept, responsive, mobile-first web page is presented.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- NoTengoBattery's `html-css-template` template and it's automation scripts
+- HTML
+- SCSS/SASS
+- Bootstrap
+- Free assets sites: Coverr, Unsplash, Lipsum (Lorem Ipsum) and Google Fonts
 
 ## Live Demo
 
@@ -21,39 +23,19 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
+For this project, you only need to follow the link to the live demo. If you need a copy of this project in your local environment, you can clone this repository using `git`.
 
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+For testing and using this project, you need to open the `index.html` file in your browser at the repository root. No other special requirements or tools are needed.
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
+- Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/NoTengoBattery)
 
 ## 🤝 Contributing
 
@@ -65,12 +47,6 @@ Feel free to check the [issues page](issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [X11](https://spdx.org/licenses/X11.html) licensed.
