@@ -18,7 +18,7 @@ A capstone project is the closing project that students will solo-perform. It is
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://notengobattery.github.io/capstone-html/)
 
 
 ## Getting Started
