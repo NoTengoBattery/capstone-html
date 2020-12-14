@@ -181,3 +181,33 @@ main {
     }
   }
 }
+
+footer,
+.footer {
+  border-top: 1px solid $strong-accent;
+  color: $medium-accent;
+
+  &-brand {
+    @extend .navbar-brand;
+
+    color: $main-color;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      @extend .footer-brand;
+    }
+  }
+
+  &-media {
+    @include liberation(bold, 1.5rem, 1.5rem);
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 12rem;
+  }
+
+
+  &-copyright {
+    @include liberation(normal, 0.8125rem, 1.25rem);
+  }
+}

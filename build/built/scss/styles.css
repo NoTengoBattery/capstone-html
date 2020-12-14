@@ -13,10 +13,20 @@ img {
 .navbar {
   background-color: #1c7293
 }
-.navbar-brand {
+.footer-brand,
+.footer-brand:active,
+.footer-brand:hover,
+.navbar-brand,
+footer-brand,
+footer-brand:active,
+footer-brand:hover {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif
 }
-.navbar-brand i {
+.footer-brand i,
+.navbar-brand i,
+footer-brand i,
+footer-brand:active i,
+footer-brand:hover i {
   line-height: 2rem
 }
 .navb-controls {
@@ -129,4 +139,29 @@ main .whatson-media {
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 50%
+}
+.footer,
+footer {
+  border-top: 1px solid #21295c;
+  color: #1b3b6f
+}
+.footer-brand,
+.footer-brand:active,
+.footer-brand:hover,
+footer-brand,
+footer-brand:active,
+footer-brand:hover {
+  color: #1c7293;
+  text-decoration: none
+}
+.footer-media,
+footer-media {
+  font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 12rem
+}
+.footer-copyright,
+footer-copyright {
+  font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }

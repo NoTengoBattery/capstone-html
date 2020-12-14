@@ -54,6 +54,12 @@ Feel free to check the [issues page](issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+- Mathew Njuguna
+- RedHat for it's wonderful Liberation font family
+- Fabrizio Bianchi for his amazing Coolors tool
+
 ## 📝 License
 
 This project is [X11](https://spdx.org/licenses/X11.html) licensed.

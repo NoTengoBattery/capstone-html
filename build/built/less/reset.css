@@ -2,6 +2,7 @@ a,
 article,
 body,
 div,
+footer,
 form,
 h1,
 h2,
@@ -21,6 +22,7 @@ span {
   vertical-align: baseline
 }
 article,
+footer,
 main,
 nav {
   display: block
