@@ -1,5 +1,6 @@
 a,
 article,
+aside,
 body,
 div,
 footer,
@@ -22,6 +23,7 @@ span {
   vertical-align: baseline
 }
 article,
+aside,
 footer,
 main,
 nav {

@@ -107,6 +107,7 @@ img {
     .submit {
       color: white;
       background-color: $accent;
+      padding: 0;
     }
   }
 }
@@ -202,7 +203,7 @@ footer,
     @include liberation(bold, 1.5rem, 1.5rem);
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     max-width: 12rem;
   }
 
