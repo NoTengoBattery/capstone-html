@@ -2,7 +2,8 @@
 body,
 html {
   font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
-  height: 100%
+  height: 100%;
+  background: #e6ebef
 }
 img {
   width: 100%;
@@ -87,9 +88,6 @@ footer-brand:hover i {
   color: #fff;
   background-color: #065a82
 }
-main {
-  background: #e6ebef
-}
 main h1,
 main h2,
 main h3 {
@@ -134,8 +132,8 @@ main .whatson-body {
 }
 main #whatson-media,
 main .whatson-media {
-  width: 50vw;
-  height: 50vw;
+  width: 50vmin;
+  height: 50vmin;
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 50%
