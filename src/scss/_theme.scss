@@ -1,4 +1,13 @@
 // The _theme.scss is a SASS partial that will define the main theme.
+// Color theme: https://coolors.co/21295c-1b3b6f-065a82-1c7293-9eb3c2
+@import url('https://fonts.googleapis.com/css?family=Cinzel:b');
+
+$main-color: #1C7293;
+$soft-accent: #9EB3C2;
+
+@mixin cinzel($st, $fs, $lh) {
+  font: #{$st} #{$fs}/#{$lh} Cinzel, "MS Serif", serif;
+}
 
 @mixin liberation($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} liberation-sans, "Segoe UI", sans-serif;

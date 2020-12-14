@@ -4,3 +4,37 @@
 body {
   @include liberation(normal, 1rem, 1rem);
 }
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.navb, .navbar {
+  background-color: $main-color;
+
+  &-brand {
+    @include cinzel(bold, 2rem, 1rem);
+  }
+
+  &-controls {
+    // This can be done using bootstrap, but the requirement is to use raw
+    // flexbox at least once.
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-control {
+    // I am going to style this here because all buttons share the same style
+    // and repeating this in the classes, in the HTMl is kind of wasteful.
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+}
