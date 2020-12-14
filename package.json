@@ -1,18 +1,18 @@
 {
-  "name": "project-template",
-  "version": "0.0.0",
-  "description": "Template for HTML/CSS/JS (frontend) projects.",
+  "name": "capstone-html",
+  "version": "1.0.0",
+  "description": "Capstone Project: HTML and CSS",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoTengoBattery/html-css-template.git"
+    "url": "git+https://github.com/NoTengoBattery/capstone-html.git"
   },
   "author": "Oever González (NoTengoBattery)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoTengoBattery/html-css-template/issues"
+    "url": "https://github.com/NoTengoBattery/capstone-html/issues"
   },
-  "homepage": "https://github.com/NoTengoBattery/html-css-template#readme",
+  "homepage": "https://github.com/NoTengoBattery/capstone-html#readme",
   "devDependencies": {
     "@lhci/cli": "*",
     "@popperjs/core": "*",
