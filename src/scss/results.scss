@@ -36,6 +36,10 @@ main {
           background: linear-gradient(90deg, rgba($tint-main, 0) 0%, $tint-main 15%);
         }
       }
+
+      &-location {
+        padding-left: 0.5rem;
+      }
     }
   }
 }

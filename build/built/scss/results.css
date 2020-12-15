@@ -187,3 +187,6 @@ main .result-card p::after {
   background: #e6ebef;
   background: linear-gradient(90deg,rgba(244,248,248,0) 0,#f4f8f8 15%)
 }
+main .result-card-location {
+  padding-left: .5rem
+}
