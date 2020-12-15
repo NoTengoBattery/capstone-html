@@ -20,4 +20,30 @@
       padding-left: 0.5rem;
     }
   }
+
+  details {
+    padding-bottom: 1rem;
+
+    .card {
+      box-shadow: 0 0 10px -3px black;
+
+      margin: {
+        top: 1rem;
+        bottom: 0;
+      }
+    }
+
+    h4 {
+      @extend h3;
+
+      color: $main-color;
+      font-size: 0.825rem;
+
+      a {
+        color: gray;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
 }

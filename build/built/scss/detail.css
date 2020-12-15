@@ -96,6 +96,7 @@ input[type=reset] {
   text-transform: uppercase;
   color: #1b3b6f
 }
+#main details h4,
 #main h3 {
   font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
@@ -136,4 +137,21 @@ footer .footer-copyright {
 }
 #main .card-location {
   padding-left: .5rem
+}
+#main details {
+  padding-bottom: 1rem
+}
+#main details .card {
+  box-shadow: 0 0 10px -3px #000;
+  margin-top: 1rem;
+  margin-bottom: 0
+}
+#main details h4 {
+  color: #1c7293;
+  font-size: .825rem
+}
+#main details h4 a {
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer
 }
