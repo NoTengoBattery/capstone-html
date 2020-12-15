@@ -27,6 +27,28 @@
   <!-- if you wondering: https://stackoverflow.com/questions/2188272/html-how-to-make-an-entire-div-a-hyperlink -->
   <main id="main" class="container">
     <section class="results">
+      <form class="jumbotron row">
+        <label for="lorem" class="col-6">Lorem ipsum</label>
+        <input id="lorem" type="text" placeholder="Dolor sit..." class="col-6" name="lorem" required="">
+        <label for="amet" class="col-6">Amet, consectetur</label>
+        <select id="amet" name="amet" class="col-6">
+          <option value="adipiscing">Adipiscing</option>
+          <option value="adipiscing">Aliquam</option>
+          <option value="adipiscing">Pulvinar</option>
+          <option value="adipiscing">Pretium</option>
+          <option value="adipiscing">Lacus</option>
+        </select>
+        <label for="convallis" class="col-6">Eget scelerisque</label>
+        <select id="convallis" name="convallis" class="col-6">
+          <option value="adipiscing">Nunc</option>
+          <option value="adipiscing">Augue quam</option>
+          <option value="adipiscing">Congue quis</option>
+          <option value="adipiscing">Pellentesque</option>
+          <option value="adipiscing">Donec</option>
+        </select>
+        <input id="reset" name="reset" type="reset" class="col-6 rounded-left" value="Clear">
+        <input id="submit" name="submit" type="submit" class="col-6 rounded-right" value="Filter">
+      </form>
       <h1>Results</h1>
       <article class="card result-card" onclick="window.open('detail.html');">
         <div class="card-body">

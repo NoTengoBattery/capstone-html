@@ -17,11 +17,6 @@
     color: $strong-accent;
   }
 
-  .card {
-    background-color: $tint-main;
-    margin-bottom: 1rem;
-  }
-
   h2 {
     @include liberation(bold, 1.15rem, 1.15rem);
 

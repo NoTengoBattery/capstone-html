@@ -20,7 +20,7 @@
   &-control {
     // I am going to style this here because all buttons share the same style
     // and repeating this in the classes, in the HTMl is kind of wasteful.
-    background: none;
+    background: none !important; // Bootstrap is insisting in changing this
     color: white;
     padding: 0;
     margin: 0;

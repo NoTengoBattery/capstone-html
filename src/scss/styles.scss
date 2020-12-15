@@ -33,31 +33,18 @@
     text-transform: uppercase;
     font-weight: bold;
 
-    form {
-      color: $medium-accent;
-      background-color: $soft-accent;
-      opacity: 0.925;
-    }
-
     // I am not going to use the Bootstrap `btn` or form for the landing
     // section, this is intentional, I want to style it myself.
     &-query,
     &-submit,
     &-info {
       height: 2rem;
+      margin: 0;
       text-transform: uppercase;
     }
 
-    &-query {
-      color: $accent;
-      background-color: white;
-    }
-
-    &-info,
-    &-submit {
-      color: white;
-      background-color: $accent;
-      padding: 0;
+    form,
+    &-info {
       opacity: 0.925;
     }
   }

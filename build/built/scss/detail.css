@@ -11,9 +11,48 @@ img {
   -o-object-fit: cover;
      object-fit: cover
 }
+form {
+  align-items: center;
+  color: #1b3b6f;
+  background-color: #9eb3c2!important;
+  opacity: .925
+}
+button,
+input,
+label {
+  margin: .25rem 0;
+  min-height: 1.6em;
+  border: none
+}
+input[type=text],
+select {
+  margin: .25rem 0;
+  min-height: 1.6em;
+  border: none;
+  color: #065a82;
+  background-color: #fff
+}
+button[type=button],
+button[type=reset],
+button[type=submit],
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  background-color: #065a82;
+  color: #fff;
+  padding: 0
+}
+button[type=reset],
+input[type=reset] {
+  background-color: #d1495b
+}
 .jumbotron {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem
+}
+.card {
+  background-color: #f4f8f8;
+  margin-bottom: 1rem
 }
 .navbar {
   background-color: #1c7293
@@ -29,7 +68,7 @@ img {
   justify-content: space-around
 }
 .navbar-control {
-  background: 0 0;
+  background: 0 0!important;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -50,10 +89,6 @@ img {
   font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #21295c
-}
-#main .card {
-  background-color: #f4f8f8;
-  margin-bottom: 1rem
 }
 #main h2 {
   font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
