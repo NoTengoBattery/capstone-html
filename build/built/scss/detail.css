@@ -126,3 +126,14 @@ footer .footer-media {
 footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }
+#main p {
+  text-align: justify
+}
+#main .location {
+  width: 100%;
+  height: 50vmax;
+  border: none
+}
+#main .card-location {
+  padding-left: .5rem
+}
