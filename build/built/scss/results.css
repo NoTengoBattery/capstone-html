@@ -190,3 +190,26 @@ main .result-card p::after {
 main .result-card-location {
   padding-left: .5rem
 }
+main .page-item .page-link,
+main .page-item.active .page-link:hover {
+  background-color: #f4f8f8;
+  color: #1b3b6f
+}
+main .page-item .page-link:hover,
+main .page-item.active .page-link:hover {
+  color: #1b3b6f;
+  background-color: #e6ebef
+}
+main .page-item.active .page-item.disabled .page-link:hover,
+main .page-item.disabled .page-item.active .page-link:hover,
+main .page-item.disabled .page-link {
+  background-color: #f4f8f8
+}
+main .page-item.active .page-link,
+main .page-item.active .page-link:hover {
+  background-color: #1c7293;
+  border-color: #1c7293
+}
+main .page-item.active .page-link:hover {
+  color: #e6ebef
+}

@@ -42,4 +42,35 @@ main {
       }
     }
   }
+
+  .page-item {
+    .page-link {
+      background-color: $tint-main;
+      color: $medium-accent;
+
+      &:hover {
+        color: $medium-accent;
+        background-color: $tint-accent;
+      }
+    }
+
+    &.disabled {
+      .page-link {
+        background-color: $tint-main;
+      }
+    }
+
+    &.active {
+      .page-link {
+        background-color: $main-color;
+        border-color: $main-color;
+
+        &:hover {
+          @extend .page-link;
+
+          color: $tint-accent;
+        }
+      }
+    }
+  }
 }
