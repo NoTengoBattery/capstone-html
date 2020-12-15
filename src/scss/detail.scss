@@ -9,10 +9,17 @@
     text-align: justify;
   }
 
+  a {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .location {
     width: 100%;
     height: 50vmax;
     border: none;
+    margin-bottom: 1rem;
   }
 
   .card {
@@ -38,12 +45,13 @@
 
       color: $main-color;
       font-size: 0.825rem;
+    }
+  }
 
-      a {
-        color: gray;
-        text-decoration: underline;
-        cursor: pointer;
-      }
+  .contact {
+    h3,
+    address {
+      font-size: 0.825rem;
     }
   }
 }
