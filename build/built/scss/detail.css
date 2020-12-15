@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel:b);
+body,
+html {
+  font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  height: 100%;
+  background: #e6ebef
+}
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover
+}
+.jumbotron {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+.navbar {
+  background-color: #1c7293
+}
+.navbar-brand {
+  font: bold 2rem/2rem Cinzel,"MS Serif",serif
+}
+.navbar-brand i {
+  line-height: 2rem
+}
+.navbar-controls {
+  display: flex;
+  justify-content: space-around
+}
+.navbar-control {
+  background: 0 0;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+  font-size: 1.25rem;
+  width: 1.3125rem;
+  height: 1.3125rem
+}
+.navbar-control i {
+  line-height: 1rem
+}
+#main {
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem
+}
+#main h1 {
+  font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
+  color: #21295c
+}
+#main .card {
+  background-color: #f4f8f8;
+  margin-bottom: 1rem
+}
+#main h2 {
+  font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
+  color: #1b3b6f
+}
+#main h3 {
+  font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
+  color: #065a82
+}
+footer {
+  border-top: 1px solid #21295c;
+  color: #1b3b6f
+}
+footer .footer-brand,
+footer .footer-brand:active,
+footer .footer-brand:hover {
+  font: bold 2rem/2rem Cinzel,"MS Serif",serif;
+  color: #1c7293;
+  text-decoration: none
+}
+footer .footer-brand i,
+footer .footer-brand:active i,
+footer .footer-brand:hover i {
+  line-height: 2rem
+}
+footer .footer-media {
+  font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
+  display: flex;
+  justify-content: space-between;
+  max-width: 12rem
+}
+footer .footer-copyright {
+  font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
+}
