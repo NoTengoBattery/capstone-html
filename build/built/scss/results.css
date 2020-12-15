@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel:b);
-@import url(https://fonts.googleapis.com/css?family=Cinzel:b);
 body,
 html {
   font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
@@ -19,16 +18,10 @@ img {
 .navbar {
   background-color: #1c7293
 }
-.navbar-brand,
-footer .footer-brand,
-footer .footer-brand:active,
-footer .footer-brand:hover {
+.navbar-brand {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif
 }
-.navbar-brand i,
-footer .footer-brand i,
-footer .footer-brand:active i,
-footer .footer-brand:hover i {
+.navbar-brand i {
   line-height: 2rem
 }
 .navbar-controls {
@@ -48,99 +41,53 @@ footer .footer-brand:hover i {
 .navbar-control i {
   line-height: 1rem
 }
-#landing {
-  height: calc(100% - 6rem)
-}
-#landing-bg::after {
-  content: "";
-  background: rgba(0,0,0,.5);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0
-}
-#landing-content {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700
-}
-#landing-content .submit,
-#landing-content form {
-  color: #1b3b6f;
-  background-color: #9eb3c2;
-  opacity: .925
-}
-#landing-content .submit > *,
-#landing-content form > * {
-  text-transform: uppercase
-}
-#landing-content .submit,
-#landing-content-query {
-  height: 2rem
-}
-#landing-content-query {
-  color: #065a82;
-  background-color: #fff
-}
-#landing-content .submit {
-  color: #fff;
-  background-color: #065a82;
-  padding: 0
-}
-#main {
+main {
   padding-top: 2rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem
 }
-#main h1,
-#main h2,
-#main h3 {
+main h1 {
   font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #21295c
 }
-#main .card {
+main .card {
   background-color: #f4f8f8;
   margin-bottom: 1rem
 }
-#main h2 {
+main h2 {
   font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
   color: #1b3b6f
 }
-#main h3 {
+main h3 {
   font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
   color: #065a82
 }
-#main #whatson-style1 {
-  background-color: #d1495b
+nav .pagination .page-item .page-link,
+nav .pagination .page-item.active .page-link:hover {
+  background-color: #f4f8f8;
+  color: #1b3b6f
 }
-#main #whatson-style2 {
-  background-color: #00798c
+nav .pagination .page-item .page-link:hover,
+nav .pagination .page-item.active .page-link:hover {
+  color: #1b3b6f;
+  background-color: #e6ebef
 }
-#main #whatson-style3 {
-  background-color: #30638e
+nav .pagination .page-item.active .page-item.disabled .page-link:hover,
+nav .pagination .page-item.disabled .page-item.active .page-link:hover,
+nav .pagination .page-item.disabled .page-link {
+  background-color: #f4f8f8
 }
-#main .whatson {
-  margin-right: -1.5rem;
-  margin-left: -1.5rem
+nav .pagination .page-item.active .page-link,
+nav .pagination .page-item.active .page-link:hover {
+  color: #f4f8f8;
+  background-color: #1c7293;
+  border-color: #1c7293
 }
-#main .whatson-body {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: column
-}
-#main .whatson-media {
-  width: 50vmin;
-  height: 50vmin;
-  max-width: 15rem;
-  max-height: 15rem;
-  border-radius: 50%
+nav .pagination .page-item.active .page-link:hover {
+  color: #e6ebef
 }
 footer {
   border-top: 1px solid #21295c;
@@ -149,8 +96,14 @@ footer {
 footer .footer-brand,
 footer .footer-brand:active,
 footer .footer-brand:hover {
+  font: bold 2rem/2rem Cinzel,"MS Serif",serif;
   color: #1c7293;
   text-decoration: none
+}
+footer .footer-brand i,
+footer .footer-brand:active i,
+footer .footer-brand:hover i {
+  line-height: 2rem
 }
 footer .footer-media {
   font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
@@ -189,27 +142,4 @@ main .result-card p::after {
 }
 main .result-card-location {
   padding-left: .5rem
-}
-main .page-item .page-link,
-main .page-item.active .page-link:hover {
-  background-color: #f4f8f8;
-  color: #1b3b6f
-}
-main .page-item .page-link:hover,
-main .page-item.active .page-link:hover {
-  color: #1b3b6f;
-  background-color: #e6ebef
-}
-main .page-item.active .page-item.disabled .page-link:hover,
-main .page-item.disabled .page-item.active .page-link:hover,
-main .page-item.disabled .page-link {
-  background-color: #f4f8f8
-}
-main .page-item.active .page-link,
-main .page-item.active .page-link:hover {
-  background-color: #1c7293;
-  border-color: #1c7293
-}
-main .page-item.active .page-link:hover {
-  color: #e6ebef
 }

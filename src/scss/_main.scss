@@ -1,0 +1,38 @@
+// Main: This partial will style the main tag. Note that the selector for this
+// tag is selected by tag, which means that all main tags will share the same
+// style.
+@use "theme"as *;
+
+main {
+  padding: {
+    top: 2rem;
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  h1 {
+    @include liberation(bold, 1.3rem, 1.3rem);
+
+    text-transform: uppercase;
+    color: $strong-accent;
+  }
+
+  .card {
+    background-color: $tint-main;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    @include liberation(bold, 1.15rem, 1.15rem);
+
+    text-transform: uppercase;
+    color: $medium-accent;
+  }
+
+  h3 {
+    @include liberation(bold, 1rem, 1rem);
+
+    text-transform: uppercase;
+    color: $accent;
+  }
+}

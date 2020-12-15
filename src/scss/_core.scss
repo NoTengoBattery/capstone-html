@@ -1,0 +1,26 @@
+// Core: This partial will style the core components of the document, including
+// selector for root tags or root classes (such as jumbotron, card, and so on)
+@forward "theme";
+
+@use "theme"as *;
+
+html,
+body {
+  @include liberation(normal, 1rem, 1.15rem);
+
+  height: 100%;
+  background: $tint-accent;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.jumbotron {
+  padding: {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+}

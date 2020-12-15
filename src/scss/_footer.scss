@@ -1,0 +1,34 @@
+// Footer: this partial will give the style to the footer. Note that even if
+// this is technically a root tag, it does not belong directly into _core.scss
+@use "theme"as *;
+
+footer {
+  border-top: 1px solid $strong-accent;
+  color: $medium-accent;
+
+  .footer {
+    &-brand {
+      @include brand-text;
+
+      color: $main-color;
+      text-decoration: none;
+
+      &:active,
+      &:hover {
+        @extend .footer-brand;
+      }
+    }
+
+    &-media {
+      @include liberation(bold, 1.5rem, 1.5rem);
+
+      display: flex;
+      justify-content: space-between;
+      max-width: 12rem;
+    }
+
+    &-copyright {
+      @include liberation(normal, 0.8125rem, 1.25rem);
+    }
+  }
+}

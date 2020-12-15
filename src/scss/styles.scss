@@ -1,64 +1,8 @@
 // This will define the main style of the landing page (index.html)
-@import "theme";
-
-html,
-body {
-  @include liberation(normal, 1rem, 1.15rem);
-
-  height: 100%;
-  background: $tint-accent;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.jumbotron {
-  padding: {
-    top: 1.5rem;
-    bottom: 1.5rem;
-  }
-}
-
-.navbar {
-  background-color: $main-color;
-
-  &-brand {
-    @include cinzel(bold, 2rem, 2rem);
-
-    i {
-      // Fix the icon being with a different line height
-      line-height: 2rem;
-    }
-  }
-
-  &-controls {
-    // This can be done using bootstrap, but the requirement is to use raw
-    // flexbox at least once.
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &-control {
-    // I am going to style this here because all buttons share the same style
-    // and repeating this in the classes, in the HTMl is kind of wasteful.
-    background: none;
-    color: white;
-    padding: 0;
-    margin: 0;
-    line-height: 1rem;
-    font-size: 1.25rem;
-    width: 1.3125rem;
-    height: 1.3125rem;
-
-    i {
-      // Fix the icon being with a different line height
-      line-height: 1rem;
-    }
-  }
-}
+@use "core"as *;
+@use "navbar";
+@use "main";
+@use "footer";
 
 #landing {
   // I am not sure how to make this div 100% height, considering the navbar
@@ -89,22 +33,19 @@ img {
     text-transform: uppercase;
     font-weight: bold;
 
-    form,
-    .submit {
+    form {
       color: $medium-accent;
       background-color: $soft-accent;
       opacity: 0.925;
-
-      > * {
-        text-transform: uppercase;
-      }
     }
 
     // I am not going to use the Bootstrap `btn` or form for the landing
     // section, this is intentional, I want to style it myself.
     &-query,
-    .submit {
+    &-submit,
+    &-info {
       height: 2rem;
+      text-transform: uppercase;
     }
 
     &-query {
@@ -112,49 +53,17 @@ img {
       background-color: white;
     }
 
-    .submit {
+    &-info,
+    &-submit {
       color: white;
       background-color: $accent;
       padding: 0;
+      opacity: 0.925;
     }
   }
 }
 
-#main {
-  padding: {
-    top: 2rem;
-    right: 1.5rem;
-    left: 1.5rem;
-  }
-
-  h1 {
-    @include liberation(bold, 1.3rem, 1.3rem);
-
-    text-transform: uppercase;
-    color: $strong-accent;
-  }
-
-  .card {
-    background-color: $tint-main;
-    margin-bottom: 1rem;
-  }
-
-  // The linter is asking to put that many empty lines...
-  h2 {
-    @extend h1;
-
-    @include liberation(bold, 1.15rem, 1.15rem);
-
-    color: $medium-accent;
-  }
-
-  h3 {
-    @extend h1;
-
-    @include liberation(bold, 1rem, 1rem);
-
-    color: $accent;
-  }
+main {
 
   // This is kind of a band, which will be used to show some remarkable aspects
   // This is not available on Bootstrap, so I will make it myself. Also, I will
@@ -194,37 +103,6 @@ img {
       max-width: 15rem;
       max-height: 15rem;
       border-radius: 50%;
-    }
-  }
-}
-
-footer {
-  border-top: 1px solid $strong-accent;
-  color: $medium-accent;
-
-  .footer {
-    &-brand {
-      @extend .navbar-brand;
-
-      color: $main-color;
-      text-decoration: none;
-
-      &:active,
-      &:hover {
-        @extend .footer-brand;
-      }
-    }
-
-    &-media {
-      @include liberation(bold, 1.5rem, 1.5rem);
-
-      display: flex;
-      justify-content: space-between;
-      max-width: 12rem;
-    }
-
-    &-copyright {
-      @include liberation(normal, 0.8125rem, 1.25rem);
     }
   }
 }

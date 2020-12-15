@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel:b);
+#main {
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem
+}
+#main h1,
+#main h2,
+#main h3 {
+  font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
+  text-transform: uppercase;
+  color: #21295c
+}
+#main .card {
+  background-color: #f4f8f8;
+  margin-bottom: 1rem
+}
+#main h2 {
+  font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  color: #1b3b6f
+}
+#main h3 {
+  font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
+  color: #065a82
+}
+#main #whatson-style1 {
+  background-color: #d1495b
+}
+#main #whatson-style2 {
+  background-color: #00798c
+}
+#main #whatson-style3 {
+  background-color: #30638e
+}
+#main .whatson {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem
+}
+#main .whatson-body {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column
+}
+#main .whatson-media {
+  width: 50vmin;
+  height: 50vmin;
+  max-width: 15rem;
+  max-height: 15rem;
+  border-radius: 50%
+}

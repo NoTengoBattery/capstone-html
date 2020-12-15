@@ -24,3 +24,12 @@ $vivid-darkblue: #003d5b;
 @mixin liberation($st, $fs, $lh) {
   font: #{$st} #{$fs}/#{$lh} liberation-sans, "Segoe UI", sans-serif;
 }
+
+@mixin brand-text {
+  @include cinzel(bold, 2rem, 2rem);
+
+  i {
+    // Fix the icon being with a different line height
+    line-height: 2rem;
+  }
+}
