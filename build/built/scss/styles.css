@@ -37,6 +37,8 @@ footer-brand:hover i {
 .navb-control {
   background: 0 0;
   color: #fff;
+  padding: 0;
+  margin: 0;
   line-height: 1rem;
   font-size: 1.25rem;
   width: 1.3125rem;
@@ -44,6 +46,10 @@ footer-brand:hover i {
 }
 .navb-control i {
   line-height: 1rem
+}
+.jumbotron {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
 }
 #landing {
   height: calc(100% - 6rem)

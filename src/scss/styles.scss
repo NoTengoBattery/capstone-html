@@ -40,6 +40,8 @@ img {
     // and repeating this in the classes, in the HTMl is kind of wasteful.
     background: none;
     color: white;
+    padding: 0;
+    margin: 0;
     line-height: 1rem;
     font-size: 1.25rem;
     width: 1.3125rem;
@@ -49,6 +51,13 @@ img {
       // Fix the icon being with a different line height
       line-height: 1rem;
     }
+  }
+}
+
+.jumbotron {
+  padding: {
+    top: 1.5rem;
+    bottom: 1.5rem;
   }
 }
 
