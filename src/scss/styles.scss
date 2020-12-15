@@ -15,7 +15,13 @@ img {
   object-fit: cover;
 }
 
-.navb,
+.jumbotron {
+  padding: {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
 .navbar {
   background-color: $main-color;
 
@@ -51,13 +57,6 @@ img {
       // Fix the icon being with a different line height
       line-height: 1rem;
     }
-  }
-}
-
-.jumbotron {
-  padding: {
-    top: 1.5rem;
-    bottom: 1.5rem;
   }
 }
 
@@ -121,7 +120,13 @@ img {
   }
 }
 
-main {
+#main {
+  padding: {
+    top: 3rem;
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
   h1 {
     @include liberation(bold, 1.3rem, 1.3rem);
 
@@ -155,23 +160,24 @@ main {
   // not use Bootstrap flex for this, I'll do it manually.
   //
   // FunFact: The Watson debugger name means "What's On?" :D
-  .whatson,
-  #whatson {
+  .whatson {
     margin: {
       right: -1.5rem;
       left: -1.5rem;
     }
 
-    &-style1 {
-      background-color: $vivid-red;
-    }
+    #whatson {
+      &-style1 {
+        background-color: $vivid-red;
+      }
 
-    &-style2 {
-      background-color: $vivid-mint;
-    }
+      &-style2 {
+        background-color: $vivid-mint;
+      }
 
-    &-style3 {
-      background-color: $vivid-blue;
+      &-style3 {
+        background-color: $vivid-blue;
+      }
     }
 
     &-body {
@@ -191,32 +197,33 @@ main {
   }
 }
 
-footer,
-.footer {
+footer {
   border-top: 1px solid $strong-accent;
   color: $medium-accent;
 
-  &-brand {
-    @extend .navbar-brand;
+  .footer {
+    &-brand {
+      @extend .navbar-brand;
 
-    color: $main-color;
-    text-decoration: none;
+      color: $main-color;
+      text-decoration: none;
 
-    &:active,
-    &:hover {
-      @extend .footer-brand;
+      &:active,
+      &:hover {
+        @extend .footer-brand;
+      }
     }
-  }
 
-  &-media {
-    @include liberation(bold, 1.5rem, 1.5rem);
+    &-media {
+      @include liberation(bold, 1.5rem, 1.5rem);
 
-    display: flex;
-    justify-content: space-between;
-    max-width: 12rem;
-  }
+      display: flex;
+      justify-content: space-between;
+      max-width: 12rem;
+    }
 
-  &-copyright {
-    @include liberation(normal, 0.8125rem, 1.25rem);
+    &-copyright {
+      @include liberation(normal, 0.8125rem, 1.25rem);
+    }
   }
 }
