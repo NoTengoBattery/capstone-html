@@ -15,16 +15,46 @@
 <body>
   <nav class="navbar flex-wrap justify-content-around navbar-expand-lg">
     <a class="text-white m-0 p-0 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 navb-controls">
-      <button class="border-0 navb-control" type="button"><i class="fas fa-search"></i></button>
-      <button class="border-0 p-0 m-0 navb-control" type="button"><i class="fas fa-info"></i></button>
-      <button class="border-0 p-0 m-0 navb-control" type="button"><i class="fas fa-blog"></i></button>
-      <button class=" p-0 m-0 navbar-toggler navb-control" type="button" data-toggle="collapse" data-target="#navb-lg" aria-controls="navb-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
+    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 navbar-controls">
+      <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-info"></i></button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-blog"></i></button>
+      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
     </div>
-    <div id="navb-lg" class="collapse navbar-collapse">
+    <div id="navbar-lg" class="collapse navbar-collapse">
     </div>
   </nav>
-  <main style="height: 100vh; width: 100vw;"></main>
+  <!-- if you wondering: https://stackoverflow.com/questions/2188272/html-how-to-make-an-entire-div-a-hyperlink -->
+  <main id="main" class="container">
+    <section class="results">
+      <h1>Results</h1>
+      <article class="card result-card" onclick="window.open('detail.html');">
+        <div class="card-body">
+          <figure>
+            <img src="../../assets/images/ad-doctor1.jpg" alt="Search result image">
+            <!-- Image thanks to Unsplash - Austin Distel -->
+          </figure>
+          <h2>Praesent egestas lorem commodo risus</h2>
+          <p class="m-0"> Duis non blandit dolor. Mauris enim ligula, pharetra sed tellus id, finibus vestibulum nulla. Morbi euismod velit eu dui posuere sodales.</p>
+        </div>
+      </article>
+    </section>
+    <nav aria-label="Pagination">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </main>
   <footer class="p-2 m-2">
     <div class="footer-container">
       <a class="footer-brand" href="#">Dr. Watson</a>

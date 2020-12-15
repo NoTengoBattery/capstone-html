@@ -1,3 +1,41 @@
 // This will define the main style of the results page (results.html)
 @import "theme";
 @import "styles";
+
+main {
+  .result {
+    &-card {
+      cursor: pointer;
+
+      img {
+        max-height: 25vmin;
+      }
+
+      h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      p {
+        @include liberation(normal, 1rem, 1.15rem);
+
+        overflow: hidden;
+        position: relative;
+        max-height: 3.4em;
+
+        // To be fair, I do dislike this approach, but it cannot be done better
+        // without the magic aid of JavaScript
+        &::after {
+          content: "... more \2192";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding-left: 1rem;
+          background: $tint-accent;
+          background: linear-gradient(90deg, rgba($tint-main, 0) 0%, $tint-main 15%);
+        }
+      }
+    }
+  }
+}

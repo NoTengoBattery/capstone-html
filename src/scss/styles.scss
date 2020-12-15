@@ -122,7 +122,7 @@ img {
 
 #main {
   padding: {
-    top: 3rem;
+    top: 2rem;
     right: 1.5rem;
     left: 1.5rem;
   }
@@ -136,6 +136,7 @@ img {
 
   .card {
     background-color: $tint-main;
+    margin-bottom: 1rem;
   }
 
   // The linter is asking to put that many empty lines...
@@ -160,24 +161,24 @@ img {
   // not use Bootstrap flex for this, I'll do it manually.
   //
   // FunFact: The Watson debugger name means "What's On?" :D
+  #whatson {
+    &-style1 {
+      background-color: $vivid-red;
+    }
+
+    &-style2 {
+      background-color: $vivid-mint;
+    }
+
+    &-style3 {
+      background-color: $vivid-blue;
+    }
+  }
+
   .whatson {
     margin: {
       right: -1.5rem;
       left: -1.5rem;
-    }
-
-    #whatson {
-      &-style1 {
-        background-color: $vivid-red;
-      }
-
-      &-style2 {
-        background-color: $vivid-mint;
-      }
-
-      &-style3 {
-        background-color: $vivid-blue;
-      }
     }
 
     &-body {

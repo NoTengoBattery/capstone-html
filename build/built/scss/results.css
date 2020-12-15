@@ -12,30 +12,30 @@ img {
   -o-object-fit: cover;
      object-fit: cover
 }
+.jumbotron {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
 .navbar {
   background-color: #1c7293
 }
-.footer-brand,
-.footer-brand:active,
-.footer-brand:hover,
 .navbar-brand,
-footer-brand,
-footer-brand:active,
-footer-brand:hover {
+footer .footer-brand,
+footer .footer-brand:active,
+footer .footer-brand:hover {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif
 }
-.footer-brand i,
 .navbar-brand i,
-footer-brand i,
-footer-brand:active i,
-footer-brand:hover i {
+footer .footer-brand i,
+footer .footer-brand:active i,
+footer .footer-brand:hover i {
   line-height: 2rem
 }
-.navb-controls {
+.navbar-controls {
   display: flex;
   justify-content: space-around
 }
-.navb-control {
+.navbar-control {
   background: 0 0;
   color: #fff;
   padding: 0;
@@ -45,12 +45,8 @@ footer-brand:hover i {
   width: 1.3125rem;
   height: 1.3125rem
 }
-.navb-control i {
+.navbar-control i {
   line-height: 1rem
-}
-.jumbotron {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem
 }
 #landing {
   height: calc(100% - 6rem)
@@ -96,78 +92,98 @@ footer-brand:hover i {
   background-color: #065a82;
   padding: 0
 }
-main h1,
-main h2,
-main h3 {
+#main {
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem
+}
+#main h1,
+#main h2,
+#main h3 {
   font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #21295c
 }
-main .card {
-  background-color: #f4f8f8
+#main .card {
+  background-color: #f4f8f8;
+  margin-bottom: 1rem
 }
-main h2 {
+#main h2 {
   font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   color: #1b3b6f
 }
-main h3 {
+#main h3 {
   font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
   color: #065a82
 }
-main #whatson,
-main .whatson {
+#main #whatson-style1 {
+  background-color: #d1495b
+}
+#main #whatson-style2 {
+  background-color: #00798c
+}
+#main #whatson-style3 {
+  background-color: #30638e
+}
+#main .whatson {
   margin-right: -1.5rem;
   margin-left: -1.5rem
 }
-main #whatson-style1,
-main .whatson-style1 {
-  background-color: #d1495b
-}
-main #whatson-style2,
-main .whatson-style2 {
-  background-color: #00798c
-}
-main #whatson-style3,
-main .whatson-style3 {
-  background-color: #30638e
-}
-main #whatson-body,
-main .whatson-body {
+#main .whatson-body {
   display: flex;
   align-content: center;
   justify-content: space-around;
   flex-direction: column
 }
-main #whatson-media,
-main .whatson-media {
+#main .whatson-media {
   width: 50vmin;
   height: 50vmin;
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 50%
 }
-.footer,
 footer {
   border-top: 1px solid #21295c;
   color: #1b3b6f
 }
-.footer-brand,
-.footer-brand:active,
-.footer-brand:hover,
-footer-brand,
-footer-brand:active,
-footer-brand:hover {
+footer .footer-brand,
+footer .footer-brand:active,
+footer .footer-brand:hover {
   color: #1c7293;
   text-decoration: none
 }
-.footer-media,
-footer-media {
+footer .footer-media {
   font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
   display: flex;
   justify-content: space-between;
   max-width: 12rem
 }
-.footer-copyright,
-footer-copyright {
+footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
+}
+main .result-card {
+  cursor: pointer
+}
+main .result-card img {
+  max-height: 25vmin
+}
+main .result-card h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+main .result-card p {
+  font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  overflow: hidden;
+  position: relative;
+  max-height: 3.4em
+}
+main .result-card p::after {
+  content: "... more →";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 1rem;
+  background: #e6ebef;
+  background: linear-gradient(90deg,rgba(244,248,248,0) 0,#f4f8f8 15%)
 }
