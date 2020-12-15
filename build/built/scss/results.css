@@ -41,52 +41,53 @@ img {
 .navbar-control i {
   line-height: 1rem
 }
-main {
+#main {
   padding-top: 2rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem
 }
-main h1 {
+#main h1 {
   font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #21295c
 }
-main .card {
+#main .card {
   background-color: #f4f8f8;
   margin-bottom: 1rem
 }
-main h2 {
+#main h2 {
   font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #1b3b6f
 }
-main h3 {
+#main h3 {
   font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #065a82
 }
-nav .pagination .page-item .page-link,
-nav .pagination .page-item.active .page-link:hover {
+.pagination .page-item .page-link,
+.pagination .page-item.active .page-link:hover {
   background-color: #f4f8f8;
   color: #1b3b6f
 }
-nav .pagination .page-item .page-link:hover,
-nav .pagination .page-item.active .page-link:hover {
+.pagination .page-item .page-link:hover,
+.pagination .page-item.active .page-link:hover {
   color: #1b3b6f;
   background-color: #e6ebef
 }
-nav .pagination .page-item.active .page-item.disabled .page-link:hover,
-nav .pagination .page-item.disabled .page-item.active .page-link:hover,
-nav .pagination .page-item.disabled .page-link {
-  background-color: #f4f8f8
+.pagination .page-item.active .page-item.disabled .page-link:hover,
+.pagination .page-item.disabled .page-item.active .page-link:hover,
+.pagination .page-item.disabled .page-link {
+  background-color: #f4f8f8;
+  color: gray
 }
-nav .pagination .page-item.active .page-link,
-nav .pagination .page-item.active .page-link:hover {
+.pagination .page-item.active .page-link,
+.pagination .page-item.active .page-link:hover {
   color: #f4f8f8;
   background-color: #1c7293;
   border-color: #1c7293
 }
-nav .pagination .page-item.active .page-link:hover {
+.pagination .page-item.active .page-link:hover {
   color: #e6ebef
 }
 footer {
@@ -114,24 +115,24 @@ footer .footer-media {
 footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }
-main .result-card {
+#main .result-card {
   cursor: pointer
 }
-main .result-card img {
+#main .result-card img {
   max-height: 25vmin
 }
-main .result-card h2 {
+#main .result-card h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis
 }
-main .result-card p {
+#main .result-card p {
   font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   overflow: hidden;
   position: relative;
   max-height: 3.4em
 }
-main .result-card p::after {
+#main .result-card p::after {
   content: "... more →";
   position: absolute;
   bottom: 0;
@@ -140,6 +141,6 @@ main .result-card p::after {
   background: #e6ebef;
   background: linear-gradient(90deg,rgba(244,248,248,0) 0,#f4f8f8 15%)
 }
-main .result-card-location {
+#main .result-card-location {
   padding-left: .5rem
 }

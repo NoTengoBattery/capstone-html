@@ -5,7 +5,7 @@
 @use "pager";
 @use "footer";
 
-main .result {
+#main .result {
   &-card {
     cursor: pointer;
 

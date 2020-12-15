@@ -3,7 +3,7 @@
 // results.
 @use "theme"as *;
 
-nav .pagination .page-item {
+.pagination .page-item {
   .page-link {
     background-color: $tint-main;
     color: $medium-accent;
@@ -17,6 +17,7 @@ nav .pagination .page-item {
   &.disabled {
     .page-link {
       background-color: $tint-main;
+      color: gray;
     }
   }
 
