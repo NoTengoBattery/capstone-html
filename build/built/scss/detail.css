@@ -162,13 +162,13 @@ footer .footer-copyright {
   text-align: justify
 }
 #main a {
-  color: gray;
+  color: #2f4f4f;
   text-decoration: underline;
   cursor: pointer
 }
 #main .location {
   width: 100%;
-  height: 50vmax;
+  height: calc(100vmax / 2.5);
   border: none;
   margin-bottom: 1rem;
   box-shadow: 0 0 5px -2.5px #000
@@ -177,7 +177,7 @@ footer .footer-copyright {
   padding-left: .5rem
 }
 #main .card img {
-  max-height: 50vh
+  max-height: calc(100vh / 3)
 }
 #main details {
   padding-bottom: 1rem
