@@ -31,6 +31,11 @@
     img {
       max-height: calc(100vh / 3);
     }
+
+    .border {
+      // !important needed to override Bootrstrap color
+      border-color: $soft-accent !important;
+    }
   }
 
   details {
@@ -48,7 +53,6 @@
     h4 {
       @extend h3;
 
-      color: $main-color;
       font-size: 0.825rem;
     }
   }
@@ -57,6 +61,11 @@
     h3,
     address {
       font-size: 0.825rem;
+    }
+
+    .ci {
+      // !important needed to override Bootrstrap color
+      border-color: $soft-accent !important;
     }
   }
 }

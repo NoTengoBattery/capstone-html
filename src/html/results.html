@@ -14,13 +14,25 @@
 
 <body>
   <nav class="navbar flex-wrap justify-content-around sticky-top">
-    <a class="text-white text-center m-0 p-0 col-12 col-md-8 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 navbar-controls">
-      <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-info"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-blog"></i></button>
-      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
-    </div>
+    <a class="text-white text-center m-0 p-0 col-12 col-md-8 col-lg-5 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
+    <form action="results.html" class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 col-lg-7 navbar-controls">
+      <button class="border-0 navbar-control" type="submit">
+        <i class="fas fa-search"></i>
+        <span class="d-none d-lg-inline">Search</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-info"></i>
+        <span class="d-none d-lg-inline">About</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-blog"></i>
+        <span class="d-none d-lg-inline">Blog</span>
+      </button>
+      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content">
+        <i class="fas fa-bars"></i>
+        <span class="d-none d-lg-inline">More</span>
+      </button>
+    </form>
     <div id="navbar-lg" class="collapse navbar-collapse">
     </div>
   </nav>
@@ -28,34 +40,46 @@
   <main id="main" class="container">
     <details class="mb-4">
       <summary>Click here to filter results</summary>
-      <form class="jumbotron row justify-content-center m-0 p-3 p-md-4">
-        <label for="lorem" class="pl-0 pr-2 col-6">Lorem ipsum</label>
-        <input id="lorem" type="text" placeholder="Dolor sit..." class="pr-2 pl-2 col-6" name="lorem" required="">
-        <label for="amet" class="pl-0 pr-2 col-6">Amet, consectetur</label>
-        <select id="amet" name="amet" class="pr-2 pl-2 col-6">
-          <option value="" disabled selected>Select your option</option>
-          <option value="adipiscing">Adipiscing</option>
-          <option value="adipiscing">Aliquam</option>
-          <option value="adipiscing">Pulvinar</option>
-          <option value="adipiscing">Pretium</option>
-          <option value="adipiscing">Lacus</option>
-        </select>
-        <label for="convallis" class="pl-0 pr-2 col-6">Eget scelerisque</label>
-        <select id="convallis" name="convallis" class="pr-2 pl-2 col-6">
-          <option value="" disabled selected>Select your option</option>
-          <option value="adipiscing">Nunc</option>
-          <option value="adipiscing">Augue quam</option>
-          <option value="adipiscing">Congue quis</option>
-          <option value="adipiscing">Pellentesque</option>
-          <option value="adipiscing">Donec</option>
-        </select>
-        <input id="reset" name="reset" type="reset" class="col-5 col-md-3 rounded-left" value="Clear">
-        <input id="submit" name="submit" type="submit" class="col-5 col-md-3 rounded-right" value="Filter">
+      <form class="jumbotron row align-items-stretch justify-content-between m-0 p-3 p-md-4">
+        <div class="row align-items-center justify-content-center m-0 col-12 col-md-6 col-lg-3 flex-lg-column">
+          <label for="lorem" class="pr-2 pl-2 mt-md-0 mb-md-0 col-6 col-md-12">Lorem ipsum</label>
+          <input id="lorem" type="text" placeholder="Dolor sit..." class="pr-2 pl-2 mt-md-0 col-6 col-md-12" name="lorem" required>
+        </div>
+        <div class="row align-items-center justify-content-center m-0 col-12 col-md-6 col-lg-3 flex-lg-column">
+          <label for="vestibulum" class="pr-2 pl-2 mt-md-0 mb-md-0 col-6 col-md-12">Vestibulum amaro</label>
+          <input id="vestibulum" type="text" placeholder="Futurus..." class="pr-2 pl-2 mt-md-0 col-6 col-md-12" name="vestibulum">
+        </div>
+        <div class="row align-items-center justify-content-center m-0 col-12 col-md-6 col-lg-3 flex-lg-column">
+          <label for="amet" class="pr-2 pl-2 mt-md-0 mb-md-0 col-6 col-md-12">Amet, consectetur</label>
+          <select id="amet" name="amet" class="pr-2 pl-2 mt-md-0 col-6 col-md-12">
+            <option value="" disabled selected>Select your option</option>
+            <option value="adipiscing">Adipiscing</option>
+            <option value="adipiscing">Aliquam</option>
+            <option value="adipiscing">Pulvinar</option>
+            <option value="adipiscing">Pretium</option>
+            <option value="adipiscing">Lacus</option>
+          </select>
+        </div>
+        <div class="row align-items-center justify-content-center m-0 col-12 col-md-6 col-lg-3 flex-lg-column">
+          <label for="convallis" class="pr-2 pl-2 mt-md-0 mb-md-0 col-6 col-md-12">Eget scelerisque</label>
+          <select id="convallis" name="convallis" class="pr-2 pl-2 mt-md-0 col-6 col-md-12">
+            <option value="" disabled selected>Select your option</option>
+            <option value="adipiscing">Nunc</option>
+            <option value="adipiscing">Augue quam</option>
+            <option value="adipiscing">Congue quis</option>
+            <option value="adipiscing">Pellentesque</option>
+            <option value="adipiscing">Donec</option>
+          </select>
+        </div>
+        <div class="row justify-content-center m-0 col-12">
+          <input id="reset" name="reset" type="reset" class="col-5 col-md-3 rounded-left" value="Clear">
+          <input id="submit" name="submit" type="submit" class="col-5 col-md-3 rounded-right" value="Filter">
+        </div>
       </form>
     </details>
     <section class="results row">
       <h1 class="col-12">Found 13 results</h1>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -68,7 +92,7 @@
           </div>
         </div>
       </article>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -81,7 +105,7 @@
           </div>
         </div>
       </article>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -93,7 +117,7 @@
           </div>
         </div>
       </article>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -106,7 +130,7 @@
           </div>
         </div>
       </article>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -119,7 +143,7 @@
           </div>
         </div>
       </article>
-      <article class="col-12 col-md-6 result-card">
+      <article class="col-12 col-md-6 col-lg-4 result-card">
         <div class="card" onclick="parent.location='detail.html';">
           <div class="card-body">
             <figure>
@@ -127,7 +151,7 @@
               <!-- Image thanks to Unsplash - Li Lin -->
             </figure>
             <h2>Curabitur imperdiet tempus neque</h2>
-            <p class="mb-1">Suspendisse sed nunc quis augue aliquam molestie. Quisque non nisi a sapien dictum molestie non a magna. Nullam sed interdum mauris. Ut nec ipsum eget ligula vulputate posuere id lacinia odio. Vestibulum eu varius urna, sed tincidunt erat. Aliquam erat volutpat.</p><i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Beirut</strong>
+            <p class="mb-1">Suspendisse sed nunc quis augue aliquam molestie. Quisque non nisi a sapien dictum molestie non a magna. Nullam sed interdum mauris. Ut nec ipsum eget ligula vulputate posuere id lacinia odio. Vestibulum eu varius urna, sed tincidunt erat. Aliquam erat volutpat.</p><i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Bermudas</strong>
           </div>
         </div>
       </article>
@@ -165,4 +189,6 @@
       </p>
     </div>
   </footer>
-</body></html>
+</body>
+
+</html>

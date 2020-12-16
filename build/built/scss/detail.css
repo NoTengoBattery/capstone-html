@@ -74,18 +74,19 @@ input[type=reset]:not(:disabled) {
 }
 .navbar-controls {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  background-color: transparent!important
 }
 .navbar-control {
   background: 0 0!important;
   color: #fff;
   padding: 0;
   margin: 0;
-  min-height: unset;
   line-height: 1rem;
   font-size: 1.25rem;
-  width: 1.3125rem;
-  height: 1.3125rem
+  min-width: 1.3125rem;
+  min-height: 1.3125rem;
+  text-transform: uppercase
 }
 .navbar-control i {
   line-height: 1rem
@@ -179,6 +180,9 @@ footer .footer-copyright {
 #main .card img {
   max-height: calc(100vh / 3)
 }
+#main .card .border {
+  border-color: #e7a49c!important
+}
 #main details {
   padding-bottom: 1rem
 }
@@ -187,13 +191,13 @@ footer .footer-copyright {
   margin-top: 1rem;
   margin-bottom: 0
 }
-#main details h4 {
-  color: #d2574d;
-  font-size: .825rem
-}
 #main .contact address,
 #main .contact details h4,
 #main .contact h3,
-#main details .contact h4 {
+#main details .contact h4,
+#main details h4 {
   font-size: .825rem
+}
+#main .contact .ci {
+  border-color: #e7a49c!important
 }

@@ -74,18 +74,19 @@ input[type=reset]:not(:disabled) {
 }
 .navbar-controls {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  background-color: transparent!important
 }
 .navbar-control {
   background: 0 0!important;
   color: #fff;
   padding: 0;
   margin: 0;
-  min-height: unset;
   line-height: 1rem;
   font-size: 1.25rem;
-  width: 1.3125rem;
-  height: 1.3125rem
+  min-width: 1.3125rem;
+  min-height: 1.3125rem;
+  text-transform: uppercase
 }
 .navbar-control i {
   line-height: 1rem

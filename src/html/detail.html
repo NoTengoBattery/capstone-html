@@ -14,13 +14,25 @@
 
 <body>
   <nav class="navbar flex-wrap justify-content-around sticky-top">
-    <a class="text-white text-center m-0 p-0 col-12 col-md-8 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 navbar-controls">
-      <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-info"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-blog"></i></button>
-      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
-    </div>
+    <a class="text-white text-center m-0 p-0 col-12 col-md-8 col-lg-5 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
+    <form action="results.html" class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 col-lg-7 navbar-controls">
+      <button class="border-0 navbar-control" type="submit">
+        <i class="fas fa-search"></i>
+        <span class="d-none d-lg-inline">Search</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-info"></i>
+        <span class="d-none d-lg-inline">About</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-blog"></i>
+        <span class="d-none d-lg-inline">Blog</span>
+      </button>
+      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content">
+        <i class="fas fa-bars"></i>
+        <span class="d-none d-lg-inline">More</span>
+      </button>
+    </form>
     <div id="navbar-lg" class="collapse navbar-collapse">
     </div>
   </nav>
@@ -29,7 +41,7 @@
     <p>Mauris hendrerit non elit eu laoreet. Aenean maximus leo vitae mauris imperdiet laoreet. Duis eget dignissim ex. Vestibulum eu efficitur libero.</p>
     <section>
       <h2><i class="fas fa-info-circle"></i> Donec vel sapien sit amet</h2>
-      <article class="card">
+      <article class="card ml-lg-5 mr-lg-5">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/ad-doctor1.jpg" alt="Search result image">
@@ -46,32 +58,48 @@
         <article class="card">
           <div class="card-body row">
             <h3 class="col-12"><i class="fas fa-hospital"></i> Praesent egestas</h3>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Type: <a href="#">Rare Genetic Diseases</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Type: <a href="#">Rare Genetic Diseases</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Speciality: <a href="#">Family Syndromes</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Speciality: <a href="#">Family Syndromes</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">City: <a href="#">Budapest - Hungary</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">City: <a href="#">Budapest - Hungary</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Installations: <a href="#">Hospice</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Installations: <a href="#">Hospice</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Services: <a href="#">Laboratory</a>, <a href="#">Kindergarten</a>, <a href="#">EOL Advisory</a> and <a href="#">Psychology</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Services: <a href="#">Laboratory</a>, <a href="#">Kindergarten</a>, <a href="#">EOL Advisory</a> and <a href="#">Psychology</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Social Security: <a>Available</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Social Security: <a>Available</a></h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Permanent residence: <a>Not Avaiable</a> (Residence only for terminal illness)</h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Permanent residence: <a>Not Avaiable</a> (Residence only for terminal illness)</h4>
+              </div>
             </div>
-            <div class="col-12 mb-1 p-2 p-0 border rounded d-flex align-items-center col-md-5 mx-auto">
-              <h4 class="m-0 p-0">Age restriction: <a>No restriction</a></h4>
+            <div class="col-12 mb-1 p-0 col-md-6">
+              <div class="border rounded p-2 m-1 h-100 d-flex align-items-center">
+                <h4 class="m-0 p-0">Age restriction: <a>No restriction</a></h4>
+              </div>
             </div>
-            <div class="col-12 p-2 col-md-10 mx-auto">
-              <button type="button" id="apply" class="p-2 w-100 rounded">Apply</button>
+            <div class="col-12 p-1 col-md-10 mx-auto">
+              <button type="button" id="apply" class="p-2 w-100 rounded"><i class="fas fa-clipboard-list"></i> Apply</button>
             </div>
 
           </div>
@@ -82,10 +110,10 @@
       <iframe class="rounded location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14812.498078365494!2d-90.5087526297034!3d14.634418640431957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a21418a2eb63%3A0xa6efcd8249fcff1c!2sCongreso%20de%20la%20Rep%C3%BAblica%20de%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1608053857284!5m2!1ses-419!2sgt" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <h2><i class="fas fa-address-book"></i> Contact information</h2>
       <div class="contact mr-0 ml-0 row">
-        <h3 class="border-top p-2 m-0 col-12 col-lg-4"><i class="fas fa-phone"></i> Phone: <a href="tel:123-456-7890">123-456-7890</a></h3>
-        <h3 class="border-top p-2 m-0 col-12 col-lg-4"><i class="fas fa-envelope"></i> Email: <a href="mailto:nobody@example.com">nobody@example.com</a></h3>
-        <h3 class="border-top p-2 m-0 col-12 col-lg-4"><i class="fas fa-globe"></i> Website: <a href="https://example.net">example.net</a></h3>
-        <div class="border-top border-bottom p-2 m-0 col-12">
+        <h3 class="border-top p-2 m-0 col-12 col-lg-4 ci"><i class="fas fa-phone"></i> Phone: <a href="tel:123-456-7890">123-456-7890</a></h3>
+        <h3 class="border-top p-2 m-0 col-12 col-lg-4 ci"><i class="fas fa-envelope"></i> Email: <a href="mailto:nobody@example.com">nobody@example.com</a></h3>
+        <h3 class="border-top p-2 m-0 col-12 col-lg-4 ci"><i class="fas fa-globe"></i> Website: <a href="https://example.net">example.net</a></h3>
+        <div class="border-top border-bottom p-2 m-0 col-12 ci">
           <h3><i class="fas fa-map-marker-alt"></i> Address:</h3>
           <address class="m-0">
             Praesent egestas<br>
@@ -113,4 +141,6 @@
       </p>
     </div>
   </footer>
-</body></html>
+</body>
+
+</html>

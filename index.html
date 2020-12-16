@@ -15,13 +15,25 @@
 
 <body>
   <nav class="navbar flex-wrap justify-content-around sticky-top">
-    <a class="text-white text-center m-0 p-0 col-12 col-md-8 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 navbar-controls">
-      <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-info"></i></button>
-      <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-blog"></i></button>
-      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content"><i class="fas fa-bars"></i></button>
-    </div>
+    <a class="text-white text-center m-0 p-0 col-12 col-md-8 col-lg-5 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
+    <form action="src/html/results.html" class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 col-lg-7 navbar-controls">
+      <button class="border-0 navbar-control" type="submit">
+        <i class="fas fa-search"></i>
+        <span class="d-none d-lg-inline">Search</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-info"></i>
+        <span class="d-none d-lg-inline">About</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-blog"></i>
+        <span class="d-none d-lg-inline">Blog</span>
+      </button>
+      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content">
+        <i class="fas fa-bars"></i>
+        <span class="d-none d-lg-inline">More</span>
+      </button>
+    </form>
     <div id="navbar-lg" class="collapse navbar-collapse">
     </div>
   </nav>
@@ -41,58 +53,66 @@
     </div>
   </aside>
   <main id="main" class="d-flex flex-wrap container">
-    <div class="row">
+    <div class="pb-4 row">
       <h1 class="text-center pb-3 col-12">Vestibulum sed imperdiet nunc</h1>
-      <article class="card text-center col-12">
-        <div class="card-body">
-          <h2 class="card-title pb-1"><i class="fas fa-search"></i> Interimo</h2>
-          <h3 class="card-subtitle pb-2">Vivani venimus!</h3>
-          <p class="card-text">Suspendisse bibendum nisl quis consectetur hendrerit. Aliquam nec magna sem. Maecenas odio nibh, blandit tempor lectus luctus, gravida cursus est.</p>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="fas fa-search"></i> Interimo</h2>
+            <h3 class="card-subtitle pb-2">Vivani venimus!</h3>
+            <p class="card-text">Suspendisse bibendum nisl quis consectetur hendrerit. Aliquam nec magna sem. Maecenas odio nibh, blandit tempor lectus luctus, gravida cursus est.</p>
+          </div>
         </div>
       </article>
-      <article class="card text-center col-12">
-        <div class="card-body">
-          <h2 class="card-title pb-1"><i class="far fa-compass"></i> Rutrum</h2>
-          <h3 class="card-subtitle pb-2">Porta urna dictum</h3>
-          <p class="card-text">Sed eu imperdiet mi. Mauris dui odio, venenatis eu risus quis, suscipit porta massa. Morbi scelerisque, enim luctus bibendum tincidunt, diam dolor gravida est, sit amet venenatis erat nulla ac ligula.</p>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="far fa-compass"></i> Rutrum</h2>
+            <h3 class="card-subtitle pb-2">Porta urna dictum</h3>
+            <p class="card-text">Sed eu imperdiet mi. Mauris dui odio, venenatis eu risus quis, suscipit porta massa. Morbi scelerisque, enim luctus bibendum tincidunt, diam dolor gravida est, sit amet venenatis erat nulla ac ligula.</p>
+          </div>
         </div>
       </article>
-      <article class="card text-center col-12">
-        <div class="card-body">
-          <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Duis posuere</h2>
-          <h3 class="card-subtitle pb-2">Pellentesque habitant morbi</h3>
-          <p class="card-text">Quisque at euismod ligula. Praesent odio arcu, interdum in mi eget, bibendum consectetur sapien.</p>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Duis posuere</h2>
+            <h3 class="card-subtitle pb-2">Pellentesque habitant morbi</h3>
+            <p class="card-text">Quisque at euismod ligula. Praesent odio arcu, interdum in mi eget, bibendum consectetur sapien.</p>
+          </div>
         </div>
       </article>
-      <article class="card text-center col-12">
-        <div class="card-body">
-          <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Consectetur</h2>
-          <h3 class="card-subtitle pb-2">Aliquam suscipit</h3>
-          <p class="card-text">Cras leo ligula, fringilla quis leo sed, finibus euismod lacus. Etiam posuere suscipit lectus, a blandit risus eleifend sit amet. Sed tincidunt eleifend feugiat.</p>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Consectetur</h2>
+            <h3 class="card-subtitle pb-2">Aliquam suscipit</h3>
+            <p class="card-text">Cras leo ligula, fringilla quis leo sed, finibus euismod lacus. Etiam posuere suscipit lectus, a blandit risus eleifend sit amet. Sed tincidunt eleifend feugiat.</p>
+          </div>
         </div>
       </article>
     </div>
   </main>
   <aside id="whatson-style1" class="text-white row d-flex flex-column justify-content-center whatson">
     <div class="row container mx-auto p-0">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-8 col-lg-9">
         <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
         <h2 class="text-white">Dies 10,000 ira, dies illa</h2>
         <p>Quantus tremor est futurus, quando iudex est venturus cuncta stricte discussurus! Tuba mirum spargens sonum per sepulcra regionum, coget omnes ante thronum.</p>
       </div>
-      <div class="d-flex col-12 col-md-4"><img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital"></div>
+      <div class="d-flex col-12 col-md-4 col-lg-3"><img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital"></div>
       <!-- Image thanks to Unsplash - National Cancer Institute -->
     </div>
   </aside>
   <aside id="whatson-style2" class="text-white row d-flex flex-column justify-content-center whatson">
     <div class="row container mx-auto p-0">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-8 col-lg-9">
         <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
         <h2 class="text-white">Solvet saeclum in favilla</h2>
         <p>Mors stupebit et Natura cum resurget creatura,
           iudicanti responsura. Liber scriptus proferetur in quo totum continetur unde mundus iudicetur.</p>
       </div>
-      <div class="d-flex col-12 col-md-4">
+      <div class="d-flex col-12 col-md-4 col-lg-3">
         <img class="mx-auto whatson-media" src="assets/images/wo-lab.jpg" alt="View of the insides of a laborat</div>ory">
         <!-- Image thanks to Unsplash - Walter Otto -->
       </div>
@@ -100,12 +120,12 @@
   </aside>
   <aside id="whatson-style3" class="text-white row d-flex flex-column justify-content-center whatson">
     <div class="row container mx-auto p-0">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-8 col-lg-9">
         <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
         <h2 class="text-white">Teste david cum sibylla!</h2>
         <p>Iudex ergo cum sedebit quidquid latet apparebit, nihil inultum remanebit. Quid sum miser tunc dicturus? Quem patronum rogaturus cum vix iustus sit securus?</p>
       </div>
-      <div class="d-flex col-12 col-md-4">
+      <div class="d-flex col-12 col-md-4 col-lg-3">
         <img class="mx-auto whatson-media" src="assets/images/na-happy.jpg" alt="View of the insides of a labor</div>atory">
         <!-- Image thanks to Unsplash - Nathan Anderson -->
       </div>
@@ -128,4 +148,6 @@
       </p>
     </div>
   </footer>
-</body></html>
+</body>
+
+</html>
