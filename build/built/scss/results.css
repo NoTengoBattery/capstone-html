@@ -3,7 +3,7 @@ body,
 html {
   font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   height: 100%;
-  background: #e6ebef;
+  background: #fbf0ef;
   min-width: 18.5rem
 }
 i {
@@ -21,8 +21,8 @@ img {
 }
 form {
   align-items: center;
-  color: #1b3b6f;
-  background-color: #9eb3c2!important;
+  color: #621f18;
+  background-color: #e7a49c!important;
   opacity: .925
 }
 button,
@@ -37,34 +37,34 @@ select {
   margin: .25rem 0;
   min-height: 1.6em;
   border: none;
-  color: #065a82;
+  color: #a33329;
   background-color: #fff
 }
-button[type=button],
-button[type=reset],
-button[type=submit],
-input[type=button],
-input[type=reset],
-input[type=submit] {
-  background-color: #065a82;
+button[type=button]:not(disabled),
+button[type=reset]:not(disabled),
+button[type=submit]:not(disabled),
+input[type=button]:not(disabled),
+input[type=reset]:not(disabled),
+input[type=submit]:not(disabled) {
+  background-color: #a33329;
   color: #fff;
   padding: 0
 }
-button[type=reset],
-input[type=reset] {
-  background-color: #d1495b
+button[type=reset]:not(disabled),
+input[type=reset]:not(disabled) {
+  background-color: #621f18
 }
 .jumbotron {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem
 }
 .card {
-  background-color: #f4f8f8;
+  background-color: #f3d1ce;
   margin-top: .5rem;
   margin-bottom: .5rem
 }
 .navbar {
-  background-color: #1c7293
+  background-color: #d2574d
 }
 .navbar-brand {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif
@@ -98,46 +98,46 @@ input[type=reset] {
 #main h1 {
   font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
-  color: #21295c
+  color: #210a08
 }
 #main h2 {
   font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
-  color: #1b3b6f
+  color: #621f18
 }
 #main h3 {
   font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
-  color: #065a82
+  color: #a33329
 }
 .pagination .page-item .page-link,
 .pagination .page-item.active .page-link:hover {
-  background-color: #f4f8f8;
-  color: #1b3b6f
+  background-color: #f3d1ce;
+  color: #621f18
 }
 .pagination .page-item .page-link:hover,
 .pagination .page-item.active .page-link:hover {
-  color: #1b3b6f;
-  background-color: #e6ebef
+  color: #621f18;
+  background-color: #fbf0ef
 }
 .pagination .page-item.active .page-item.disabled .page-link:hover,
 .pagination .page-item.disabled .page-item.active .page-link:hover,
 .pagination .page-item.disabled .page-link {
-  background-color: #f4f8f8;
+  background-color: #f3d1ce;
   color: gray
 }
 .pagination .page-item.active .page-link,
 .pagination .page-item.active .page-link:hover {
-  color: #f4f8f8;
-  background-color: #1c7293;
-  border-color: #1c7293
+  color: #f3d1ce;
+  background-color: #d2574d;
+  border-color: #d2574d
 }
 .pagination .page-item.active .page-link:hover {
-  color: #e6ebef
+  color: #fbf0ef
 }
 footer {
-  border-top: 1px solid #21295c;
-  color: #1b3b6f
+  border-top: 1px solid #210a08;
+  color: #621f18
 }
 footer .footer-container {
   display: flex;
@@ -147,7 +147,7 @@ footer .footer-brand,
 footer .footer-brand:active,
 footer .footer-brand:hover {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif;
-  color: #1c7293;
+  color: #d2574d;
   text-decoration: none
 }
 @media(min-width:768px) {
@@ -214,8 +214,8 @@ footer .footer-copyright {
   bottom: 0;
   right: 0;
   padding-left: 1rem;
-  background: #e6ebef;
-  background: linear-gradient(90deg,rgba(244,248,248,0) 0,#f4f8f8 15%)
+  background: #fbf0ef;
+  background: linear-gradient(90deg,rgba(243,209,206,0) 0,#f3d1ce 15%)
 }
 #main .result-card-location {
   padding-left: .5rem

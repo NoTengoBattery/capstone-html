@@ -38,7 +38,7 @@ For testing and using this project, you need to open the `index.html` file in yo
 
 ## Authors
 
-👤 **Author1**
+👤 **Oever González**
 
 - GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
 - Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
