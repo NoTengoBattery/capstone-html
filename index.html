@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <nav class="navbar flex-wrap justify-content-around navbar-expand-lg">
-    <a class="text-white m-0 p-0 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
-    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 navbar-controls">
+  <nav class="navbar flex-wrap justify-content-around">
+    <a class="text-white text-center m-0 p-0 col-12 col-md-8 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
+    <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 navbar-controls">
       <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
       <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-info"></i></button>
       <button class="border-0 p-0 m-0 navbar-control" type="button"><i class="fas fa-blog"></i></button>
@@ -41,64 +41,70 @@
     </div>
   </aside>
   <main id="main" class="d-flex flex-wrap container">
-    <h1 class="text-center pb-3">Vestibulum sed imperdiet nunc</h1>
-    <article class="card text-center">
-      <div class="card-body">
-        <h2 class="card-title pb-1"><i class="fas fa-search"></i> Interimo</h2>
-        <h3 class="card-subtitle pb-2">Vivani venimus!</h3>
-        <p class="card-text">Suspendisse bibendum nisl quis consectetur hendrerit. Aliquam nec magna sem. Maecenas odio nibh, blandit tempor lectus luctus, gravida cursus est.</p>
-      </div>
-    </article>
-    <article class="card text-center">
-      <div class="card-body">
-        <h2 class="card-title pb-1"><i class="far fa-compass"></i> Rutrum</h2>
-        <h3 class="card-subtitle pb-2">Porta urna dictum</h3>
-        <p class="card-text">Sed eu imperdiet mi. Mauris dui odio, venenatis eu risus quis, suscipit porta massa. Morbi scelerisque, enim luctus bibendum tincidunt, diam dolor gravida est, sit amet venenatis erat nulla ac ligula.</p>
-      </div>
-    </article>
-    <article class="card text-center">
-      <div class="card-body">
-        <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Duis posuere</h2>
-        <h3 class="card-subtitle pb-2">Pellentesque habitant morbi</h3>
-        <p class="card-text">Quisque at euismod ligula. Praesent odio arcu, interdum in mi eget, bibendum consectetur sapien.</p>
-      </div>
-    </article>
-    <article class="card text-center">
-      <div class="card-body">
-        <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Consectetur</h2>
-        <h3 class="card-subtitle pb-2">Aliquam suscipit</h3>
-        <p class="card-text">Cras leo ligula, fringilla quis leo sed, finibus euismod lacus. Etiam posuere suscipit lectus, a blandit risus eleifend sit amet. Sed tincidunt eleifend feugiat.</p>
-      </div>
-    </article>
-    <article id="whatson-style1" class="whatson p-4">
-      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
-      <div class="whatson-body text-white">
-        <h2 class="text-white whatson-title">Dies 10,000 ira, dies illa</h2>
-        <p>Quantus tremor est futurus, quando iudex est venturus cuncta stricte discussurus! Tuba mirum spargens sonum per sepulcra regionum, coget omnes ante thronum.</p>
-        <img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital">
-        <!-- Image thanks to Unsplash - National Cancer Institute -->
-      </div>
-    </article>
-    <article id="whatson-style2" class="whatson p-4">
-      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
-      <div class="whatson-body text-white">
-        <h2 class="text-white whatson-title">Solvet saeclum in favilla</h2>
-        <p>Mors stupebit et Natura cum resurget creatura,
-          iudicanti responsura. Liber scriptus proferetur in quo totum continetur unde mundus iudicetur.</p>
-        <img class="mx-auto whatson-media" src="assets/images/wo-lab.jpg" alt="View of the insides of a laboratory">
-        <!-- Image thanks to Unsplash - Walter Otto -->
-      </div>
-    </article>
-    <article id="whatson-style3" class="whatson p-4">
-      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
-      <div class="whatson-body text-white">
-        <h2 class="text-white whatson-title">Teste david cum sibylla!</h2>
-        <p>Iudex ergo cum sedebit quidquid latet apparebit, nihil inultum remanebit. Quid sum miser tunc dicturus? Quem patronum rogaturus cum vix iustus sit securus?</p>
-        <img class="mx-auto whatson-media" src="assets/images/na-happy.jpg" alt="View of the insides of a laboratory">
-        <!-- Image thanks to Unsplash - Nathan Anderson -->
-      </div>
-    </article>
+    <div class="row">
+      <h1 class="text-center pb-3 col-12">Vestibulum sed imperdiet nunc</h1>
+      <article class="card text-center col-12">
+        <div class="card-body">
+          <h2 class="card-title pb-1"><i class="fas fa-search"></i> Interimo</h2>
+          <h3 class="card-subtitle pb-2">Vivani venimus!</h3>
+          <p class="card-text">Suspendisse bibendum nisl quis consectetur hendrerit. Aliquam nec magna sem. Maecenas odio nibh, blandit tempor lectus luctus, gravida cursus est.</p>
+        </div>
+      </article>
+      <article class="card text-center col-12">
+        <div class="card-body">
+          <h2 class="card-title pb-1"><i class="far fa-compass"></i> Rutrum</h2>
+          <h3 class="card-subtitle pb-2">Porta urna dictum</h3>
+          <p class="card-text">Sed eu imperdiet mi. Mauris dui odio, venenatis eu risus quis, suscipit porta massa. Morbi scelerisque, enim luctus bibendum tincidunt, diam dolor gravida est, sit amet venenatis erat nulla ac ligula.</p>
+        </div>
+      </article>
+      <article class="card text-center col-12">
+        <div class="card-body">
+          <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Duis posuere</h2>
+          <h3 class="card-subtitle pb-2">Pellentesque habitant morbi</h3>
+          <p class="card-text">Quisque at euismod ligula. Praesent odio arcu, interdum in mi eget, bibendum consectetur sapien.</p>
+        </div>
+      </article>
+      <article class="card text-center col-12">
+        <div class="card-body">
+          <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Consectetur</h2>
+          <h3 class="card-subtitle pb-2">Aliquam suscipit</h3>
+          <p class="card-text">Cras leo ligula, fringilla quis leo sed, finibus euismod lacus. Etiam posuere suscipit lectus, a blandit risus eleifend sit amet. Sed tincidunt eleifend feugiat.</p>
+        </div>
+      </article>
+    </div>
   </main>
+  <aside id="whatson-style1" class="text-white row whatson">
+    <div class="col-12 col-md-6">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <h2 class="text-white">Dies 10,000 ira, dies illa</h2>
+      <p>Quantus tremor est futurus, quando iudex est venturus cuncta stricte discussurus! Tuba mirum spargens sonum per sepulcra regionum, coget omnes ante thronum.</p>
+    </div>
+    <div class="d-flex col-12 col-md-6"><img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital"></div>
+    <!-- Image thanks to Unsplash - National Cancer Institute -->
+  </aside>
+  <aside id="whatson-style2" class="text-white row whatson">
+    <div class="col-12 col-md-6">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <h2 class="text-white">Solvet saeclum in favilla</h2>
+      <p>Mors stupebit et Natura cum resurget creatura,
+        iudicanti responsura. Liber scriptus proferetur in quo totum continetur unde mundus iudicetur.</p>
+    </div>
+    <div class="d-flex col-12 col-md-6">
+      <img class="mx-auto whatson-media" src="assets/images/wo-lab.jpg" alt="View of the insides of a laborat</div>ory">
+      <!-- Image thanks to Unsplash - Walter Otto -->
+    </div>
+  </aside>
+  <aside id="whatson-style3" class="text-white row whatson">
+    <div class="col-12 col-md-6">
+      <!-- FunFact: this is the Dies Irae, the latin poem (a real one) -->
+      <h2 class="text-white">Teste david cum sibylla!</h2>
+      <p>Iudex ergo cum sedebit quidquid latet apparebit, nihil inultum remanebit. Quid sum miser tunc dicturus? Quem patronum rogaturus cum vix iustus sit securus?</p>
+    </div>
+    <div class="d-flex col-12 col-md-6">
+      <img class="mx-auto whatson-media" src="assets/images/na-happy.jpg" alt="View of the insides of a labor</div>atory">
+      <!-- Image thanks to Unsplash - Nathan Anderson -->
+    </div>
+  </aside>
   <footer class="p-2 m-2">
     <div class="footer-container">
       <a class="footer-brand" href="#">Dr. Watson</a>

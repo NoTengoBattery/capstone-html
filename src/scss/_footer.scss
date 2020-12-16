@@ -2,12 +2,32 @@
 // this is technically a root tag, it does not belong directly into _core.scss
 @use "theme"as *;
 
+@mixin flex_basis($basis) {
+  @media (min-width: $md) {
+    flex: 0 0 $basis;
+    max-width: $basis;
+  }
+}
+
 footer {
   border-top: 1px solid $strong-accent;
   color: $medium-accent;
 
   .footer {
+    &-container {
+      // As per requirement, I am going to make the footer a responsive flex
+      // using pure CSS instead of Bootstrap.
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
     &-brand {
+      @include flex_basis(75%);
       @include brand-text;
 
       color: $main-color;
@@ -20,6 +40,7 @@ footer {
     }
 
     &-media {
+      @include flex_basis(25%);
       @include liberation(bold, 1.5rem, 1.5rem);
 
       display: flex;

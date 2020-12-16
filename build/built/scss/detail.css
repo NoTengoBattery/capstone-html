@@ -106,12 +106,28 @@ footer {
   border-top: 1px solid #21295c;
   color: #1b3b6f
 }
+footer .footer-container {
+  display: flex;
+  flex-direction: column
+}
 footer .footer-brand,
 footer .footer-brand:active,
 footer .footer-brand:hover {
   font: bold 2rem/2rem Cinzel,"MS Serif",serif;
   color: #1c7293;
   text-decoration: none
+}
+@media(min-width:768px) {
+  footer .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+  footer .footer-brand,
+  footer .footer-brand:active,
+  footer .footer-brand:hover {
+    flex: 0 0 75%;
+    max-width: 75%
+  }
 }
 footer .footer-brand i,
 footer .footer-brand:active i,
@@ -123,6 +139,12 @@ footer .footer-media {
   display: flex;
   justify-content: space-between;
   max-width: 12rem
+}
+@media(min-width:768px) {
+  footer .footer-media {
+    flex: 0 0 25%;
+    max-width: 25%
+  }
 }
 footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
