@@ -3,7 +3,8 @@ body,
 html {
   font: 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   height: 100%;
-  background: #e6ebef
+  background: #e6ebef;
+  min-width: 18.5rem
 }
 i {
   font-style: italic
