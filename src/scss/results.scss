@@ -8,7 +8,12 @@
 #main .result {
   &-card {
     padding: {
-      top: 0.5rem;
+      top: 0.25rem;
+      bottom: 0.5rem;
+    }
+
+    margin: {
+      top: 0.25rem;
       bottom: 0.5rem;
     }
 

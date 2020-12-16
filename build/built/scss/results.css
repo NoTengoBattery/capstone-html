@@ -182,8 +182,10 @@ footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }
 #main .result-card {
-  padding-top: .5rem;
-  padding-bottom: .5rem
+  padding-top: .25rem;
+  padding-bottom: .5rem;
+  margin-top: .25rem;
+  margin-bottom: .5rem
 }
 #main .result-card .card {
   cursor: pointer;

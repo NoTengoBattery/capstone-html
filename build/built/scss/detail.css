@@ -175,6 +175,9 @@ footer .footer-copyright {
 #main .card-location {
   padding-left: .5rem
 }
+#main .card img {
+  max-height: 50vh
+}
 #main details {
   padding-bottom: 1rem
 }
