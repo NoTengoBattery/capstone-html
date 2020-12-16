@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar flex-wrap justify-content-around">
+  <nav class="navbar flex-wrap justify-content-around sticky-top">
     <a class="text-white text-center m-0 p-0 col-12 col-md-8 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
     <div class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 navbar-controls">
       <button class="border-0 navbar-control" type="button"><i class="fas fa-search"></i></button>
@@ -50,7 +50,7 @@
         <input id="submit" name="submit" type="submit" class="col-6 rounded-right" value="Filter">
       </form>
       <h1>Results</h1>
-      <article class="card result-card" onclick="window.open('detail.html');">
+      <article class="card result-card" onclick="parent.location='detail.html';">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/ad-doctor1.jpg" alt="Search result image">
@@ -61,7 +61,7 @@
           <i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Budapest</strong>
         </div>
       </article>
-      <article class="card result-card" onclick="window.open('detail.html');">
+      <article class="card result-card" onclick="parent.location='detail.html';">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/fv-doctor2.jpg" alt="Search result image">
@@ -72,7 +72,7 @@
           <i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Barcelona</strong>
         </div>
       </article>
-      <article class="card result-card" onclick="window.open('detail.html');">
+      <article class="card result-card" onclick="parent.location='detail.html';">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/ll-doctor3.jpg" alt="Search result image">
@@ -82,7 +82,7 @@
           <p class="mb-1">Mauris sit amet magna id lectus malesuada vulputate. Morbi eget purus maximus odio eleifend consequat vitae ac ipsum.</p><i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Beirut</strong>
         </div>
       </article>
-      <article class="card result-card" onclick="window.open('detail.html');">
+      <article class="card result-card" onclick="parent.location='detail.html';">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/fv-doctor2.jpg" alt="Search result image">
@@ -93,7 +93,7 @@
           <i class="fas fa-hospital-symbol"></i><strong class="result-card-location">Brasilia</strong>
         </div>
       </article>
-      <article class="card result-card" onclick="window.open('detail.html');">
+      <article class="card result-card" onclick="parent.location='detail.html';">
         <div class="card-body">
           <figure>
             <img class="rounded" src="../../assets/images/ad-doctor1.jpg" alt="Search result image">
