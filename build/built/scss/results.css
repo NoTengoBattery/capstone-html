@@ -40,18 +40,18 @@ select {
   color: #a33329;
   background-color: #fff
 }
-button[type=button]:not(disabled),
-button[type=reset]:not(disabled),
-button[type=submit]:not(disabled),
-input[type=button]:not(disabled),
-input[type=reset]:not(disabled),
-input[type=submit]:not(disabled) {
+button[type=button]:not(:disabled),
+button[type=reset]:not(:disabled),
+button[type=submit]:not(:disabled),
+input[type=button]:not(:disabled),
+input[type=reset]:not(:disabled),
+input[type=submit]:not(:disabled) {
   background-color: #a33329;
   color: #fff;
   padding: 0
 }
-button[type=reset]:not(disabled),
-input[type=reset]:not(disabled) {
+button[type=reset]:not(:disabled),
+input[type=reset]:not(:disabled) {
   background-color: #621f18
 }
 .jumbotron {
