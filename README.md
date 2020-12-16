@@ -54,11 +54,11 @@ Some small details may change for any of the following reasons:
 
 Because of the subject that this page discusses, using a funny orange color does not serve the purpose well. For this reason, I created an alternative theme with my own selection of colors. The links inside the page do not work due to the limitations of the service used to provide the demo, but you can browse them, one by one, following the links below.
 
-[Landing](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/index.html)
-[Results](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/src/html/results.html)
-[Details](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/src/html/detail.html)
+- [Landing](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/index.html)
+- [Results](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/src/html/results.html)
+- [Details](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/src/html/detail.html)
 
-> Note that while this service is useful, it is not as fast as GitHub pages, so you will experience jitter while the stylesheet reloads. Some web page details may not be rendered correctly, but this is the same as the GitHub page, just with the different color schema.
+> Note that while this service is useful, it is not as fast as GitHub pages, so you will experience jitter while the stylesheet reloads. Some web page details may not be rendered correctly, but this is the same as the GitHub page, just with the different color schema. **IT DOES NOT WORK ON FIREFOX**
 
 ## Getting Started
 
