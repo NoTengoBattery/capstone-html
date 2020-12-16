@@ -5,6 +5,13 @@ html {
   height: 100%;
   background: #e6ebef
 }
+i {
+  font-style: italic
+}
+b,
+strong {
+  font-weight: 700
+}
 img {
   width: 100%;
   height: auto;
@@ -52,7 +59,8 @@ input[type=reset] {
 }
 .card {
   background-color: #f4f8f8;
-  margin-bottom: 1rem
+  margin-top: .5rem;
+  margin-bottom: .5rem
 }
 .navbar {
   background-color: #1c7293
@@ -178,9 +186,14 @@ footer .footer-copyright {
 #landing-content-info {
   opacity: .925
 }
+#landing-content form {
+  min-height: 15vh;
+  max-height: calc(100vh / 3)
+}
 .whatson {
   margin: 0;
-  padding: 1rem
+  padding: 1rem;
+  min-height: calc(100vh / 3)
 }
 @media(min-width:768px) {
   footer .footer-media {

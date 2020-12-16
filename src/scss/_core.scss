@@ -18,6 +18,15 @@ body {
   background: $tint-accent;
 }
 
+i {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -70,5 +79,9 @@ button {
 
 .card {
   background-color: $tint-main;
-  margin-bottom: 1rem;
+
+  margin: {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
 }

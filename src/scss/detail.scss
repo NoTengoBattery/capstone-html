@@ -20,6 +20,7 @@
     height: 50vmax;
     border: none;
     margin-bottom: 1rem;
+    box-shadow: 0 0 5px -2.5px black;
   }
 
   .card {
@@ -32,7 +33,7 @@
     padding-bottom: 1rem;
 
     .card {
-      box-shadow: 0 0 10px -3px black;
+      box-shadow: 0 0 15px -5px black;
 
       margin: {
         top: 1rem;

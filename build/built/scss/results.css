@@ -5,6 +5,13 @@ html {
   height: 100%;
   background: #e6ebef
 }
+i {
+  font-style: italic
+}
+b,
+strong {
+  font-weight: 700
+}
 img {
   width: 100%;
   height: auto;
@@ -52,7 +59,8 @@ input[type=reset] {
 }
 .card {
   background-color: #f4f8f8;
-  margin-bottom: 1rem
+  margin-top: .5rem;
+  margin-bottom: .5rem
 }
 .navbar {
   background-color: #1c7293
@@ -174,10 +182,17 @@ footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }
 #main .result-card {
-  cursor: pointer
+  padding-top: .5rem;
+  padding-bottom: .5rem
+}
+#main .result-card .card {
+  cursor: pointer;
+  height: 100%
 }
 #main .result-card img {
-  max-height: 25vmin
+  min-height: 10rem;
+  max-height: 25vmin;
+  height: calc(100vh / 3)
 }
 #main .result-card h2 {
   white-space: nowrap;

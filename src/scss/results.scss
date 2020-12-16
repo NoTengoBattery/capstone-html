@@ -7,10 +7,20 @@
 
 #main .result {
   &-card {
-    cursor: pointer;
+    padding: {
+      top: 0.5rem;
+      bottom: 0.5rem;
+    }
+
+    .card {
+      cursor: pointer;
+      height: 100%;
+    }
 
     img {
+      min-height: 10rem;
       max-height: 25vmin;
+      height: calc(100vh / 3);
     }
 
     h2 {
