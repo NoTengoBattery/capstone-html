@@ -11,21 +11,21 @@
   }
 
   h1 {
-    @include liberation(bold, 1.3rem, 1.3rem);
+    @include liberation(bold, 1.3rem, 1.45rem);
 
     text-transform: uppercase;
     color: $strong-accent;
   }
 
   h2 {
-    @include liberation(bold, 1.15rem, 1.15rem);
+    @include liberation(bold, 1.15rem, 1.3rem);
 
     text-transform: uppercase;
     color: $medium-accent;
   }
 
   h3 {
-    @include liberation(bold, 1rem, 1rem);
+    @include liberation(bold, 1rem, 1.15rem);
 
     text-transform: uppercase;
     color: $accent;

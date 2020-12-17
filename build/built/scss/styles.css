@@ -99,19 +99,19 @@ input[type=reset]:not(:disabled) {
 }
 #main h1,
 .whatson h1 {
-  font: bold 1.3rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
+  font: bold 1.3rem/1.45rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #210a08
 }
 #main h2,
 .whatson h2 {
-  font: bold 1.15rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
+  font: bold 1.15rem/1.3rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #621f18
 }
 #main h3,
 .whatson h3 {
-  font: bold 1rem/1rem liberation-sans,"Segoe UI",sans-serif;
+  font: bold 1rem/1.15rem liberation-sans,"Segoe UI",sans-serif;
   text-transform: uppercase;
   color: #a33329
 }
