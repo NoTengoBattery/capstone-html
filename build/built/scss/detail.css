@@ -156,6 +156,9 @@ footer .footer-media {
     max-width: 25%
   }
 }
+footer .footer-icon {
+  color: inherit
+}
 footer .footer-copyright {
   font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }

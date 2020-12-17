@@ -48,6 +48,10 @@ footer {
       max-width: 12rem;
     }
 
+    &-icon {
+      color: inherit;
+    }
+
     &-copyright {
       @include liberation(normal, 0.8125rem, 1.25rem);
     }
