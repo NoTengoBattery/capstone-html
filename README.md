@@ -6,6 +6,8 @@
 
 ![screenshot](./assets/screenshots/project-iphone5.png)
 
+[Project presentation](https://youtu.be/ilz0rF5jAj4)
+
 A capstone project is the closing project that students will solo-perform. Its goal is to assess the student's technical and professional skills from the course that it is closing. For this project, the student should develop a concept, responsive, mobile-first web page.
 
 ## Design Considerations
@@ -18,7 +20,7 @@ Some small details may change for any of the following reasons:
 - The footer bar is over-simplified on purpose because a heavily filled and high-contrast footer may distract the user from reaching the core information, which is the ultimate goal.
 - When designing the results cards, I decided to make them similar to Bootstrap cards because users *may want* a sneak peek of the actual content to click the result, rather than a picture and a name.
   - The original design uses a background image with white text in the middle because a sneak peeks is not as valuable as, for example, the distance from the user to the school.
-- The filter form is hidden inside a `details` tag, which is closed by default because it may draw the user's attention earlier than expected.
+- The filter form is hidden inside a `details` tag closed by default because it may draw the user's attention earlier than expected.
   - I want the user to navigate the results before filtering them, but without forcing them to reach the bottom of the page to find the filter form.
 - Inside the details page, I added a card that shows the complete information from the sneak peek. This feature is present because the sneak-peek drew the user's attention in the results, and they may want to find the full details sooner rather than later.
 - Inside the details page, you may find some text which resembles a blog entry or an article.
@@ -30,29 +32,28 @@ Some small details may change for any of the following reasons:
 
 ## Built With
 
-- NoTengoBattery's `html-css-template` template and it's automatization scripts
-- HTML
-- SCSS/SASS
-- Bootstrap
+- NoTengoBattery's [`html-css-template`](https://github.com/NoTengoBattery/html-css-template) template and it's automatization scripts
+- [Bootstrap](https://getbootstrap.com/)
+- [HTML](https://www.w3.org/html/)
+- [SCSS/SASS](https://sass-lang.com/)
 - Free assets sites
-  - Coverr
-  - Unsplash
-  - FontAwesome
-  - Lipsum (Lorem Ipsum)
-  - Google Fonts
-  - Adobe Fonts
-  - Coolors
+  - [Adobe Fonts](https://fonts.adobe.com/)
+  - [Coolors](https://coolors.co/)
+  - [Coverr](https://coverr.co/)
+  - [FontAwesome](https://fontawesome.com/)
+  - [Google Fonts](https://fonts.google.com/)
+  - [Unsplash](https://unsplash.com/)
 
 ## Live Demo
 
-[Live Demo Link](https://notengobattery.github.io/capstone-html/)
+Deployed version on [GitHub Pages](https://notengobattery.github.io/capstone-html/)
 
 - Show results: click on the search button either in the navbar or on the landing cover
 - Show details page: click on any results card
 
 ### Original Design Version
 
-Because of the subject that this page discusses, using a funny orange color with big, comic icons does not serve the purpose very well. For this reason, I created an alternative theme with my selection of colors. The links inside the page do not work due to the limitations of the service used to provide the demo, but you can browse them, one by one, following the links below.
+Because of the subject that this page discusses, using a funny orange color with big, comic icons does not serve the purpose. For this reason, I created an alternative theme with my selection of colors. The links inside the page do not work due to the limitations of the service used to provide the demo, but you can browse them, one by one, following the links below.
 
 - [Landing](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/index.html)
 - [Results](https://htmlpreview.github.io/?https://github.com/NoTengoBattery/capstone-html/blob/original-design/src/html/results.html)
@@ -64,6 +65,13 @@ Because of the subject that this page discusses, using a funny orange color with
 
 For this project, you only need to follow the link to the live demo. If you need a copy of this project in your local environment, you can clone this repository using `git`.
 
+- Open your terminal
+- Type `git clone https://github.com/NoTengoBattery/capstone-html.git`
+
+You can also use the green "Code" button on GitHub to download a `.zip` file with the source code.
+
+- Check this [StackOverflow](https://stackoverflow.com/a/2751270) answer.
+
 ### Usage
 
 For testing and using this project, you need to open the `index.html` file in your browser at the repository root. No other special requirements or tools are required.
@@ -74,7 +82,7 @@ For testing and using this project, you need to open the `index.html` file in yo
 
 - GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
 - Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/NoTengoBattery)
+- LinkedIn: [Oever González](https://linkedin.com/in/NoTengoBattery)
 
 ## 🤝 Contributing
 
@@ -88,9 +96,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Mathew Njuguna
-- RedHat for its astonishing Liberation font family
-- Fabrizio Bianchi for his excellent Coolors tool
+- [Mathew Njuguna](https://www.behance.net/mathewnjuguna)
+- [RedHat](https://www.redhat.com/) for its astonishing [Liberation](https://www.redhat.com/en/blog/liberation-fonts) font family
+- [Fabrizio Bianchi](https://www.instagram.com/_fbrz) for his excellent [Coolors](https://coolors.co/) tool
+- [Leyland Kirby](https://leylandkirby.bandcamp.com/) (a.k.a [The Caretaker](https://thecaretaker.bandcamp.com/)) for his amazing royality-free ambient music
 
 ## 📝 License
 
