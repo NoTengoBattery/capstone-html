@@ -46,7 +46,7 @@ label {
   @include form-common;
 }
 
-input[type=text],
+input[type=text] input[type=email],
 select {
   @include form-common;
 

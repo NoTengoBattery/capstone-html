@@ -3,6 +3,12 @@
 // style.
 @use "theme"as *;
 
+@mixin h($w) {
+  @include liberation(bold, $w, $w + 0.15rem);
+
+  text-transform: uppercase;
+}
+
 #main {
   padding: {
     top: 2rem;
@@ -11,23 +17,20 @@
   }
 
   h1 {
-    @include liberation(bold, 1.3rem, 1.45rem);
+    @include h(1.3rem);
 
-    text-transform: uppercase;
     color: $strong-accent;
   }
 
   h2 {
-    @include liberation(bold, 1.15rem, 1.3rem);
+    @include h(1.15rem);
 
-    text-transform: uppercase;
     color: $medium-accent;
   }
 
   h3 {
-    @include liberation(bold, 1rem, 1.15rem);
+    @include h(1rem);
 
-    text-transform: uppercase;
     color: $accent;
   }
 }
