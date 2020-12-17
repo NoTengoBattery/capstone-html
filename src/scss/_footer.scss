@@ -12,89 +12,10 @@
 footer {
   background-color: $footer-main;
   color: $footer-contrast;
-  padding: 1rem;
-
-  .footer {
-    &-container {
-      // As per requirement, I am going to make the footer a responsive flex
-      // using pure CSS instead of Bootstrap.
-      display: flex;
-      flex-direction: column;
-
-      @media (min-width: $md) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    }
-
-    &-brand {
-      @include flex_basis(75%);
-
-      display: flex;
-      align-items: center;
-
-      a {
-        padding: 0.5rem;
-        border: 1px solid $footer-contrast;
-        color: $footer-contrast;
-        text-decoration: none;
-
-        &:active,
-        &:hover {
-          @extend a;
-        }
-      }
-
-      &-rounded {
-        @include brand-text;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 3.5rem;
-        height: 3.5rem;
-      }
-
-      &-r {
-        border-left: none !important;
-      }
-
-      &-cr {
-        margin-left: -0.375rem;
-      }
-
-      &-rm {
-        border-radius: 0 50% 50% 0;
-      }
-    }
-
-    &-foot {
-      background-color: $footer-accent;
-      margin: -1rem;
-      margin-top: 0;
-      padding: 1rem;
-    }
-
-    &-media {
-      @include flex_basis(25%);
-      @include liberation(bold, 1.5rem, 1.5rem);
-
-      display: flex;
-      justify-content: space-between;
-      max-width: 12rem;
-    }
-
-    &-icon {
-      color: inherit;
-    }
-
-    &-copyright {
-      @include liberation(normal, 0.8125rem, 1.25rem);
-    }
-  }
 
   .footer-heading {
+    @include flex_basis(97% / 3);
+
     color: $footer-contrast;
     padding: 0.5rem 0;
     display: flex;
@@ -124,6 +45,124 @@ footer {
       padding-left: 1rem;
       padding-right: 1rem;
       text-transform: uppercase;
+    }
+  }
+
+  .footer {
+    &-container {
+      // As per requirement, I am going to make the footer a responsive flex
+      // using pure CSS instead of Bootstrap.
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+
+      @media (min-width: $md) {
+        flex-direction: row;
+        align-items: unset;
+        flex-wrap: wrap;
+        padding: 2rem;
+      }
+    }
+
+    &-brand {
+      @include flex_basis(100%);
+
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+
+      @media (min-width: $md) {
+        justify-content: center;
+      }
+
+      a {
+        padding: 0.5rem;
+        border: 1px solid $footer-contrast;
+        color: $footer-contrast;
+        text-decoration: none;
+        text-align: center;
+
+        @media (min-width: $md) {
+          min-width: 5.15rem;
+        }
+
+        &:active,
+        &:hover {
+          @extend a;
+        }
+      }
+
+      &-rounded {
+        @include brand-text;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        min-width: unset !important;
+      }
+
+      &-r {
+        border-left: none !important;
+      }
+
+      &-cr {
+        margin-left: -0.375rem;
+      }
+
+      &-rm {
+        border-radius: 0 35% 35% 0;
+      }
+
+      &-l {
+        border-right: none !important;
+      }
+
+      &-cl {
+        margin-right: -0.375rem;
+      }
+
+      &-lm {
+        border-radius: 35% 0 0 35%;
+      }
+    }
+
+    &-foot {
+      @include flex_basis(100%);
+
+      background-color: $footer-accent;
+      padding: 0.5rem;
+      display: flex;
+      flex: 1 1 100%;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (min-width: $md) {
+        padding: 2rem;
+      }
+    }
+
+    &-media {
+      @include flex_basis(25%);
+      @include liberation(bold, 1.5rem, 1.5rem);
+
+      display: flex;
+      flex: 1 1 100%;
+      justify-content: space-between;
+      max-width: 12rem;
+    }
+
+    &-icon {
+      color: inherit;
+    }
+
+    &-copyright {
+      @include liberation(normal, 0.8125rem, 1.25rem);
     }
   }
 }

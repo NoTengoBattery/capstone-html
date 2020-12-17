@@ -117,80 +117,7 @@ input[type=reset]:not(:disabled) {
 }
 footer {
   background-color: #000;
-  color: #fff;
-  padding: 1rem
-}
-footer .footer-container {
-  display: flex;
-  flex-direction: column
-}
-@media(min-width:768px) {
-  footer .footer-container {
-    flex-direction: row;
-    flex-wrap: wrap
-  }
-}
-footer .footer-brand {
-  display: flex;
-  align-items: center
-}
-@media(min-width:768px) {
-  footer .footer-brand {
-    flex: 0 0 75%;
-    max-width: 75%
-  }
-}
-footer .footer-brand a,
-footer .footer-brand a:active,
-footer .footer-brand a:hover {
-  padding: .5rem;
-  border: 1px solid #fff;
-  color: #fff;
-  text-decoration: none
-}
-footer .footer-brand-rounded {
-  font: bold 2rem/2rem Cinzel,"MS Serif",serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem
-}
-footer .footer-brand-rounded i {
-  line-height: 2rem
-}
-footer .footer-brand-r {
-  border-left: none!important
-}
-footer .footer-brand-cr {
-  margin-left: -.375rem
-}
-footer .footer-brand-rm {
-  border-radius: 0 50% 50% 0
-}
-footer .footer-foot {
-  background-color: gray;
-  margin: 0 -1rem -1rem;
-  padding: 1rem
-}
-footer .footer-media {
-  font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
-  display: flex;
-  justify-content: space-between;
-  max-width: 12rem
-}
-@media(min-width:768px) {
-  footer .footer-media {
-    flex: 0 0 25%;
-    max-width: 25%
-  }
-}
-footer .footer-icon {
-  color: inherit
-}
-footer .footer-copyright {
-  font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
+  color: #fff
 }
 footer .footer-heading {
   color: #fff;
@@ -198,6 +125,12 @@ footer .footer-heading {
   display: flex;
   flex-direction: column;
   align-items: center
+}
+@media(min-width:768px) {
+  footer .footer-heading {
+    flex: 0 0 32.3333333333%;
+    max-width: 32.3333333333%
+  }
 }
 footer .footer-heading p {
   margin: 0;
@@ -221,6 +154,107 @@ footer .footer-heading #subscribe-submit {
   padding-left: 1rem;
   padding-right: 1rem;
   text-transform: uppercase
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem
+}
+@media(min-width:768px) {
+  footer .footer-container {
+    flex-direction: row;
+    align-items: unset;
+    flex-wrap: wrap;
+    padding: 2rem
+  }
+}
+footer .footer-brand {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem
+}
+footer .footer-brand a,
+footer .footer-brand a:active,
+footer .footer-brand a:hover {
+  padding: .5rem;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center
+}
+@media(min-width:768px) {
+  footer .footer-brand {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center
+  }
+  footer .footer-brand a,
+  footer .footer-brand a:active,
+  footer .footer-brand a:hover {
+    min-width: 5.15rem
+  }
+}
+footer .footer-brand-rounded {
+  font: bold 2rem/2rem Cinzel,"MS Serif",serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  min-width: unset!important
+}
+footer .footer-brand-rounded i {
+  line-height: 2rem
+}
+footer .footer-brand-r {
+  border-left: none!important
+}
+footer .footer-brand-cr {
+  margin-left: -.375rem
+}
+footer .footer-brand-rm {
+  border-radius: 0 35% 35% 0
+}
+footer .footer-brand-l {
+  border-right: none!important
+}
+footer .footer-brand-cl {
+  margin-right: -.375rem
+}
+footer .footer-brand-lm {
+  border-radius: 35% 0 0 35%
+}
+footer .footer-foot {
+  background-color: gray;
+  padding: .5rem;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+@media(min-width:768px) {
+  footer .footer-foot {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 2rem
+  }
+}
+footer .footer-media {
+  font: bold 1.5rem/1.5rem liberation-sans,"Segoe UI",sans-serif;
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  max-width: 12rem
+}
+footer .footer-icon {
+  color: inherit
+}
+footer .footer-copyright {
+  font: .8125rem/1.25rem liberation-sans,"Segoe UI",sans-serif
 }
 #landing {
   height: calc(100% - 6rem)
@@ -264,6 +298,10 @@ footer .footer-heading #subscribe-submit {
   min-height: calc(100vh / 3)
 }
 @media(min-width:768px) {
+  footer .footer-media {
+    flex: 0 0 25%;
+    max-width: 25%
+  }
   #landing {
     height: calc(100% - 3.8125rem)
   }
