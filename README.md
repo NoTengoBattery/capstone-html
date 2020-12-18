@@ -15,7 +15,7 @@ A capstone project is the closing project that students will solo-perform. Its g
 This project's approach was thinking of it as a client reached with an idea for its website. From that idea, I gave myself creative freedom, so it will not look 100% the same. It will contain all features and sections, but they may look and feel different.
 
 Some small details may change for any of the following reasons:
-- The color schema is not in-line with the subject. For this, I provide an alternative color schema that fits better.
+- The original color schema is not in-line with the subject. For this, I provide an alternative color schema that fits better.
 - There are some changes in color, backgrounds, borders, shadows, and tints to improve contrast and usability; and draw the user's attention to the intended part of the site.
 - The footer bar is over-simplified on purpose because a heavily filled and high-contrast footer may distract the user from reaching the core information, which is the ultimate goal.
 - When designing the results cards, I decided to make them similar to Bootstrap cards because users *may want* a sneak peek of the actual content to click the result, rather than a picture and a name.
@@ -51,7 +51,7 @@ Deployed version on [GitHub Pages](https://notengobattery.github.io/capstone-htm
 - Show results: click on the search button either in the navbar or on the landing cover
 - Show details page: click on any results card
 
-### Original Design Version
+### Original Design Version (orange theme)
 
 Because of the subject that this page discusses, using a funny orange color with big, comic icons does not serve the purpose. For this reason, I created an alternative theme with my selection of colors. The links inside the page do not work due to the limitations of the service used to provide the demo, but you can browse them, one by one, following the links below.
 
