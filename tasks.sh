@@ -71,7 +71,7 @@ if [ "x$RUN_SASS" = "x$YES" ]; then
     dir_name=$(dirname "$src")
     filename="${base_name%.*}"
     extension="${base_name##*.}"
-    if [ -f "$src" ] && [[ "$filename" != _*.$extension ]]; then
+    if [ -f "$src" ] && [[ "$filename" != _* ]]; then
       dst="$(dirname "$dir_name")/${CSS_COMPILED}/${extension}/${filename}.css"
       _print_run "SASS CSS preprocessor" "$NPX" sass --style=compressed --update "$src" "$dst"
     fi
@@ -86,7 +86,7 @@ if [ "x$RUN_LESS" = "x$YES" ]; then
     dir_name=$(dirname "$src")
     filename="${base_name%.*}"
     extension="${base_name##*.}"
-    if [ -f "$src" ] && [[ "$filename" != _*.$extension ]]; then
+    if [ -f "$src" ] && [[ "$filename" != _* ]]; then
       dst="$(dirname "$dir_name")/${CSS_COMPILED}/${extension}/${filename}.css"
       _print_run "LESS CSS preprocessor" "$NPX" lessc "$src" "$dst"
     fi
@@ -95,7 +95,7 @@ fi
 
 # Run the `stylelint` linter
 if [ "x$RUN_STYLELINT" = "x$YES" ]; then
-  _print_run "Stylelint CSS linter" "$NPX" stylelint $STYLELINT_MATCH_PATTERN
+  _print_run "Stylelint CSS linter" "$NPX" stylelint --fix $STYLELINT_MATCH_PATTERN
 fi
 
 # Run the gulp tasks

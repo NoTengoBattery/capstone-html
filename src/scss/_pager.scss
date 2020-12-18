@@ -1,0 +1,37 @@
+// Pager: This partial will give style to the navigation bar that is the pager.
+// The pager is the small bar, at the bottom, that contains links to pages of
+// results.
+@use "theme"as *;
+
+.pagination .page-item {
+  .page-link {
+    background-color: $tint-main;
+    color: $medium-accent;
+
+    &:hover {
+      color: $medium-accent;
+      background-color: $tint-accent;
+    }
+  }
+
+  &.disabled {
+    .page-link {
+      background-color: $tint-main;
+      color: gray;
+    }
+  }
+
+  &.active {
+    .page-link {
+      color: $tint-main;
+      background-color: $main-color;
+      border-color: $main-color;
+
+      &:hover {
+        @extend .page-link;
+
+        color: $tint-accent;
+      }
+    }
+  }
+}

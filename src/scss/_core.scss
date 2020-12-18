@@ -1,0 +1,88 @@
+// Core: This partial will style the core components of the document, including
+// selector for root tags or root classes (such as jumbotron, card, and so on)
+@forward "theme";
+
+@use "theme"as *;
+
+@mixin form-common {
+  margin: 0.25rem 0;
+  min-height: 1.6em;
+  border: none;
+}
+
+html,
+body {
+  @include liberation(normal, 1rem, 1.15rem);
+
+  height: 100%;
+  background: $tint-accent;
+  min-width: 18.5rem;
+}
+
+i {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+form {
+  align-items: center;
+  color: $medium-accent;
+  // I need !important to change all forms, even when I make them jumbotrons
+  background-color: $soft-accent !important;
+  opacity: 0.925;
+}
+
+label {
+  @include form-common;
+}
+
+input[type=text] input[type=email],
+select {
+  @include form-common;
+
+  color: $accent;
+  background-color: white;
+}
+
+input,
+button {
+  @include form-common;
+
+  &[type=button]:not(:disabled),
+  &[type=submit]:not(:disabled),
+  &[type=reset]:not(:disabled) {
+    background-color: $accent;
+    color: white;
+    padding: 0;
+  }
+
+  &[type=reset]:not(:disabled) {
+    background-color: $medium-accent;
+  }
+}
+
+.jumbotron {
+  padding: {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
+.card {
+  background-color: $tint-main;
+
+  margin: {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+// The _theme.scss is a SASS partial that will define the main theme.
+// Color theme: https://coolors.co/11132d-21295c-1b3b6f-065a82-1c7293-9eb3c2-f4f8f8-e6ebef
+// Alternative theme: https://coolors.co/210a08-621f18-a33329-d2574d-e7a49c-f3d1ce-fbf0ef
+// Vivid card color theme: https://coolors.co/edae49-d1495b-00798c-30638e-003d5b
+@import url('https://fonts.googleapis.com/css?family=Cinzel:b');
+
+// Media Query Breakpoints
+$md: 768px;
+
+// Color theme
+$strong-accent: #21295c;
+$medium-accent: #1b3b6f;
+$accent: #065a82;
+$main-color: #1c7293;
+$soft-accent: #9eb3c2;
+$tint-main: #f4f8f8;
+$tint-accent: #e6ebef;
+$footer-main: #11132d;
+$footer-contrast: $tint-main;
+$footer-accent: $main-color;
+
+// Vivid colors for the Watson cards
+$vivid-yellow: #edae49;
+$vivid-red: #d1495b;
+$vivid-mint: #00798c;
+$vivid-blue: #30638e;
+$vivid-darkblue: #003d5b;
+
+@mixin cinzel($st, $fs, $lh) {
+  font: #{$st} #{$fs}/#{$lh} Cinzel, "MS Serif", serif;
+}
+
+@mixin liberation($st, $fs, $lh) {
+  font: #{$st} #{$fs}/#{$lh} liberation-sans, "Segoe UI", sans-serif;
+}
+
+@mixin brand-text {
+  @include cinzel(bold, 2rem, 2rem);
+
+  i {
+    // Fix the icon being with a different line height
+    line-height: 2rem;
+  }
+}

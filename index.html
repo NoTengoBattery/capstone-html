@@ -3,12 +3,174 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NoTengoBattery - Template</title>
+  <title>Dr. Watson − Connect with Specialist in Rare Diseases</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="build/built/less/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/zin7cte.css">
+  <link rel="stylesheet" href="build/built/scss/styles.css">
 </head>
 
 <body>
-</body>
-
-</html>
+  <nav class="navbar flex-wrap justify-content-around sticky-top">
+    <a class="text-white text-center m-0 p-0 col-12 col-md-8 col-lg-5 navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Dr. Watson</a>
+    <form action="src/html/results.html" class="w-100 pl-5 pr-5 pt-3 pb-2 col-12 col-md-4 col-lg-7 navbar-controls">
+      <button class="border-0 navbar-control" type="submit">
+        <i class="fas fa-search"></i>
+        <span class="d-none d-lg-inline">Search</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-info"></i>
+        <span class="d-none d-lg-inline">About</span>
+      </button>
+      <button class="border-0 p-0 m-0 navbar-control" type="button">
+        <i class="fas fa-blog"></i>
+        <span class="d-none d-lg-inline">Blog</span>
+      </button>
+      <button class=" p-0 m-0 navbar-toggler navbar-control" type="button" data-toggle="collapse" data-target="#navbar-lg" aria-controls="navbar-lg" aria-expanded="false" aria-label="Toggle navigation content">
+        <i class="fas fa-bars"></i>
+        <span class="d-none d-lg-inline">More</span>
+      </button>
+    </form>
+    <div id="navbar-lg" class="collapse navbar-collapse">
+    </div>
+  </nav>
+  <aside id="landing" class="position-relative">
+    <div id="landing-bg" class="h-100 position-relative">
+      <img class="h-100" src="assets/images/nci.jpg" alt="Doctor attending a patient">
+      <!-- Image thanks to Unsplash - National Cancer Institute -->
+    </div>
+    <div id="landing-content" class="position-absolute p-2 d-flex flex-column justify-content-center align-content-center container">
+      <p class="text-center">Dr. Watson help you to connect with experts in rare diseases</p>
+      <form action="src/html/results.html" class="jumbotron m-0 align-content-center row">
+        <span class="p-0 pb-1 col-12">Search by keyword:</span>
+        <input type="text" id="landing-content-query" class="col-8 rounded-left">
+        <input type="submit" id="landing-content-submit" class="col-4 rounded-right" value="Search">
+      </form>
+      <button type="button" id="landing-content-info" class="rounded">How it works?</button>
+    </div>
+  </aside>
+  <main id="main" class="d-flex flex-wrap container">
+    <div class="pb-4 row">
+      <h1 class="text-center pb-3 col-12">Enter Barnardo and Francisco, two sentinels</h1>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="fas fa-search"></i> Who’s there?</h2>
+            <h3 class="card-subtitle pb-2">Nay, answer me</h3>
+            <p class="card-text">Stand and unfold yourself. Long live the King! Barnardo? He. You come most carefully upon your hour. ’Tis now struck twelve. Get thee to bed, Francisco. For this relief much thanks. ’Tis bitter cold, and I am sick at heart.</p>
+          </div>
+        </div>
+      </article>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="far fa-compass"></i> Que trata de la condición</h2>
+            <h3 class="card-subtitle pb-2">Del famoso hidalgo</h3>
+            <p class="card-text">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.</p>
+          </div>
+        </div>
+      </article>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="fas fa-laptop-medical"></i> Dies iræ, dies illa</h2>
+            <h3 class="card-subtitle pb-2">Solvet sæclum in favilla</h3>
+            <p class="card-text">Quantus tremor est futurus, quando iudex est venturus, cuncta stricte discussurus! Tuba mirum spargens sonum per sepulcra regionum, coget omnes ante thronum. Mors stupebit et Natura, cum resurget creatura, iudicanti responsura.</p>
+          </div>
+        </div>
+      </article>
+      <article class="p-1 text-center col-12 col-lg-6">
+        <div class="h-100 card">
+          <div class="card-body">
+            <h2 class="card-title pb-1"><i class="far fa-calendar-check"></i> Inferno</h2>
+            <h3 class="card-subtitle pb-2">Canto I</h3>
+            <p class="card-text">Incomincia la Commedia di Dante Alleghieri di Fiorenza, ne la quale tratta de le pene e punimenti de' vizi e de' meriti e premi de le virtù. Comincia il canto primo de la prima parte la quale si chiama Inferno, nel qual l'auttore fa proemio a tutta l'opera.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <aside id="whatson-style1" class="text-white row d-flex flex-column justify-content-center whatson">
+    <div class="row container mx-auto p-0">
+      <div class="col-12 col-md-8 col-lg-9">
+        <h2 class="text-white">Foi no domingo de Páscoa que se soube em Leiria</h2>
+        <p>Que o pároco da Sé, José Miguéis, tinha morrido de madrugada com uma apoplexia. O pároco era um homem sangüíneo e nutrido, que passava entre o clero diocesano pelo comilão dos comilões. Contavam-se histórias singulares da sua voracidade.</p>
+      </div>
+      <div class="d-flex col-12 col-md-4 col-lg-3"><img class="mx-auto whatson-media" src="assets/images/nci-hospital.jpg" alt="The front of an hospital"></div>
+      <!-- Image thanks to Unsplash - National Cancer Institute -->
+    </div>
+  </aside>
+  <aside id="whatson-style2" class="text-white row d-flex flex-column justify-content-center whatson">
+    <div class="row container mx-auto p-0">
+      <div class="col-12 col-md-8 col-lg-9">
+        <h2 class="text-white">Dans lequel Phileas Fogg et Passepartout</h2>
+        <p>En l’année 1872, la maison portant le numéro 7 de Saville-row, Burlington Gardens – maison dans laquelle Sheridan mourut en 1814 –, était habitée par Phileas Fogg, esq., l’un des membres les plus singuliers et les plus remarqués du Reform-Club de Londres, bien qu’il semblât prendre à tâche de ne rien faire qui pût attirer l’attention.</p>
+      </div>
+      <div class="d-flex col-12 col-md-4 col-lg-3">
+        <img class="mx-auto whatson-media" src="assets/images/wo-lab.jpg" alt="View of the insides of a laborat</div>ory">
+        <!-- Image thanks to Unsplash - Walter Otto -->
+      </div>
+    </div>
+  </aside>
+  <aside id="whatson-style3" class="text-white row d-flex flex-column justify-content-center whatson">
+    <div class="row container mx-auto p-0">
+      <div class="col-12 col-md-8 col-lg-9">
+        <h2 class="text-white">Soluţia a doua: a lui Alexandru Zinoviev</h2>
+        <p>Este cea găsită de unul din personajele cărţii Înălţimile găunoase. Personajul e un om tînăr, prezentat sub porecla alegorică Zurbagiul. Soluţia stă în totala neadaplare în sistem. Zurbagiul nu are domiciliu stabil, nu are acte în regulă, nu e în cîmpul muncii; e un vagabond, e un parazit, e un coate goale şi o haimana.</p>
+      </div>
+      <div class="d-flex col-12 col-md-4 col-lg-3">
+        <img class="mx-auto whatson-media" src="assets/images/na-happy.jpg" alt="View of the insides of a labor</div>atory">
+        <!-- Image thanks to Unsplash - Nathan Anderson -->
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a class="d-none d-md-inline footer-brand-l footer-brand-lm" href="#">Search</a>
+        <a class="d-none d-md-inline footer-brand-l footer-brand-cl" href="#">Blog</a>
+        <a class="footer-brand-rounded p-0" href="#"><i class="fas fa-notes-medical"></i></a>
+        <a class="footer-brand-r footer-brand-cr" href="#">About</a>
+        <a class="d-md-none footer-brand-r" href="#">Search</a>
+        <a class="d-md-none footer-brand-r" href="#">Blog</a>
+        <a class="footer-brand-r footer-brand-rm" href="#">More</a>
+      </div>
+      <form class="bg-transparent footer-heading">
+        <label class="label" for="subscribe">Subscribe</label>
+        <div class="input-group">
+          <input class="form-control" id="subscribe" name="subscribe" type="email" placeholder="youemail@example.com" required>
+          <div class="input-group-append">
+            <button id="subscribe-submit" class="input-group-text" type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+      <div class="footer-heading">
+        <p class="label">Contact</p>
+        <p>Have a question or submission?</p>
+        <a href="mailto:nobody@example.net">nobody@example.net</a>
+      </div>
+      <div class="footer-heading">
+        <p class="label">About</p>
+        <p>Dr. Watson is an online platform that assists patients to find a suitable expert for their rare ilness by simply searching by location, features, availability, etc.
+          <a href="#">Learn more...</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-foot">
+      <div class="mt-2 mb-2 mr-2 footer-media">
+        <a class="footer-icon" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="footer-icon" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="footer-icon" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="footer-icon" href="#"><i class="fab fa-tumblr"></i></a>
+        <a class="footer-icon" href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="m-0 footer-copyright">
+        Copyright © 2020 Oever González
+        <br>
+        Some rights reserved. Under the X11/MIT licence.
+      </p>
+    </div>
+  </footer>
+</body></html>

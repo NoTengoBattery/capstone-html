@@ -1,0 +1,106 @@
+// This will define the main style of the landing page (index.html)
+@use "core"as *;
+@use "navbar";
+@use "main";
+@use "footer";
+
+#landing {
+  // I am not sure how to make this div 100% height, considering the navbar
+  height: calc(100% - 6rem);
+
+  @media (min-width: $md) {
+    height: calc(100% - 3.8125rem);
+  }
+
+  &-bg {
+
+    // This is the background image and it's black tint (for better contrast)
+    &::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &-content {
+    // Since I cannot float this over the background, for some reason, I am
+    // going to make it absolute and then make it fill the whole container.
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    // I am not going to use the Bootstrap `btn` or form for the landing
+    // section, this is intentional, I want to style it myself.
+    &-query,
+    &-submit,
+    &-info {
+      height: 2rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    form,
+    &-info {
+      opacity: 0.925;
+    }
+
+    form {
+      min-height: 15vh;
+      max-height: calc(100vh / 3);
+    }
+  }
+}
+
+// This is kind of a band, which will be used to show some remarkable aspects
+// This is not available on Bootstrap, so I will make it myself. Also, I will
+// not use Bootstrap flex for this, I'll do it manually.
+//
+// FunFact: The Watson debugger name means "What's On?" :D
+.whatson {
+  @extend #main;
+
+  margin: 0;
+  padding: 1rem;
+  min-height: calc(100vh / 3);
+
+  @media (min-width: $md) {
+    padding: 2rem;
+  }
+
+  &#whatson {
+    &-style1 {
+      background-color: $vivid-red;
+    }
+
+    &-style2 {
+      background-color: $vivid-mint;
+    }
+
+    &-style3 {
+      background-color: $vivid-blue;
+    }
+  }
+
+  &-body {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  &-media {
+    width: 50vmin;
+    height: 50vmin;
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%;
+  }
+}

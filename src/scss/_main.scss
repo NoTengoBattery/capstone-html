@@ -1,0 +1,36 @@
+// Main: This partial will style the main tag. Note that the selector for this
+// tag is selected by tag, which means that all main tags will share the same
+// style.
+@use "theme"as *;
+
+@mixin h($w) {
+  @include liberation(bold, $w, $w + 0.15rem);
+
+  text-transform: uppercase;
+}
+
+#main {
+  padding: {
+    top: 2rem;
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  h1 {
+    @include h(1.3rem);
+
+    color: $strong-accent;
+  }
+
+  h2 {
+    @include h(1.15rem);
+
+    color: $medium-accent;
+  }
+
+  h3 {
+    @include h(1rem);
+
+    color: $accent;
+  }
+}

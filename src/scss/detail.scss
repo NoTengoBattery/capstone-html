@@ -1,0 +1,71 @@
+// This will define the main style of the details page (results.html)
+@use "core"as *;
+@use "navbar";
+@use "main";
+@use "footer";
+
+#main {
+  p {
+    text-align: justify;
+  }
+
+  a {
+    color: darkslategray;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .location {
+    width: 100%;
+    height: calc(100vmax / 2.5);
+    border: none;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px -2.5px black;
+  }
+
+  .card {
+    &-location {
+      padding-left: 0.5rem;
+    }
+
+    img {
+      max-height: calc(100vh / 3);
+    }
+
+    .border {
+      // !important needed to override Bootrstrap color
+      border-color: $soft-accent !important;
+    }
+  }
+
+  details {
+    padding-bottom: 1rem;
+
+    .card {
+      box-shadow: 0 0 15px -5px black;
+
+      margin: {
+        top: 1rem;
+        bottom: 0;
+      }
+    }
+
+    h4 {
+      @extend h3;
+
+      font-size: 0.825rem;
+    }
+  }
+
+  .contact {
+    h3,
+    address {
+      font-size: 0.825rem;
+    }
+
+    .ci {
+      // !important needed to override Bootrstrap color
+      border-color: $soft-accent !important;
+    }
+  }
+}

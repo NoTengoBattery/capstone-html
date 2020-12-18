@@ -1,0 +1,39 @@
+// Navbar: This partial will give style to the navigation bar that is at the
+// top. While the pager is technically a navbar, it is not in the scope of
+// this file.
+@use "theme"as *;
+
+.navbar {
+  background-color: $main-color;
+
+  &-brand {
+    @include brand-text;
+  }
+
+  &-controls {
+    // This can be done using bootstrap, but the requirement is to use raw
+    // flexbox at least once.
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent !important;
+  }
+
+  &-control {
+    // I am going to style this here because all buttons share the same style
+    // and repeating this in the classes, in the HTMl is kind of wasteful.
+    background: none !important; // Bootstrap is insisting in changing this
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+    font-size: 1.25rem;
+    min-width: 1.3125rem;
+    min-height: 1.3125rem;
+    text-transform: uppercase;
+
+    i {
+      // Fix the icon being with a different line height
+      line-height: 1rem;
+    }
+  }
+}

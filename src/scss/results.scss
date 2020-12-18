@@ -1,0 +1,61 @@
+// This will define the main style of the results page (results.html)
+@use "core"as *;
+@use "navbar";
+@use "main";
+@use "pager";
+@use "footer";
+
+#main .result {
+  &-card {
+    padding: {
+      top: 0.25rem;
+      bottom: 0.5rem;
+    }
+
+    margin: {
+      top: 0.25rem;
+      bottom: 0.5rem;
+    }
+
+    .card {
+      cursor: pointer;
+      height: 100%;
+    }
+
+    img {
+      min-height: 10rem;
+      max-height: 25vmin;
+      height: calc(100vh / 3);
+    }
+
+    h2 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      @include liberation(normal, 1rem, 1.15rem);
+
+      overflow: hidden;
+      position: relative;
+      max-height: 3.4em;
+
+      // To be fair, I do dislike this approach, but it cannot be done better
+      // without the magic aid of JavaScript
+      &::after {
+        content: "... more \2192";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 1rem;
+        background: $tint-accent;
+        background: linear-gradient(90deg, rgba($tint-main, 0) 0%, $tint-main 15%);
+      }
+    }
+
+    &-location {
+      padding-left: 0.5rem;
+    }
+  }
+}
