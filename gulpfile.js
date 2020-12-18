@@ -14,7 +14,6 @@ gulp.task('styles', function (done) {
       content: ['src/**/*.html', 'index.html']
     }))
     .pipe(cleancss({
-      format: 'beautify',
       level: 2
     }))
     .pipe(postcss([autoprefixer()]))
